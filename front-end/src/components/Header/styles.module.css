@@ -1,0 +1,33 @@
+.header {
+  background: #c4c4c4;
+}
+
+.header__container {
+  display: flex;
+  max-width: calc(1440px - 3.2rem);
+  margin: 0 auto;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.hamburguer {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburguer__pipe {
+  display: block;
+  background: #000;
+  border-radius: 200px;
+  height: 0.2rem;
+  width: 100%;
+}
