@@ -1,0 +1,36 @@
+.mentor__container {
+  max-width: calc(1440px - 3.2rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "image"
+    "text"
+    "button";
+  padding: 2rem;
+  row-gap: 2rem;
+}
+
+.mentor__wrapperFirst {
+  grid-area: image;
+}
+
+.mentor__pic {
+  width: 100%;
+}
+
+.mentor__title {
+  grid-area: title;
+  text-align: center;
+}
+
+.mentor__text {
+  grid-area: text;
+}
+
+.mentor__ctaBtn {
+  grid-area: button;
+  width: 19.5rem;
+  justify-self: center;
+}
