@@ -1,0 +1,41 @@
+.hero {
+  display: grid;
+  align-items: center;
+  background-image: url(https://picsum.photos/1440/515);
+  height: 100vh;
+  width: 100vw;
+  max-width: 1440px;
+  max-height: 515px;
+  padding: 0 80px 0 80px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  max-width: 520px;
+  max-height: 212px;
+  color: white;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content h2 {
+  font-size: 20px;
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.content button {
+  width: 100vw;
+  max-width: 301px;
+  border-radius: 6px;
+  padding: 15px 0 15px 0px;
+}
