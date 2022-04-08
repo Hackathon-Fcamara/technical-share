@@ -1,14 +1,15 @@
 import { Header } from "./components/Header";
+import { BecomeMentor } from "./components/BecomeMentor";
 
-// STYLES
 import "./global/reset.css";
 
-const App = () => {
+function App() {
   return (
     <>
       <Header />
+      <BecomeMentor />
     </>
   );
-};
+}
 
 export default App;
