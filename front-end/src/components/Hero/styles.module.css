@@ -1,15 +1,29 @@
 .hero {
   display: grid;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-height: 515px;
+}
+
+.hero__container {
+  display: grid;
   align-items: center;
   background-image: url(https://picsum.photos/1440/515);
   height: 100vh;
   width: 100vw;
-  max-width: 1440px;
   max-height: 515px;
+  max-width: 1440px;
   padding: 0 80px 0 80px;
 }
 
-.content {
+@media (max-width: 461px) {
+  .hero__container {
+    padding: 0 30px 0 30px;
+  }
+}
+
+.hero__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,20 +34,20 @@
   color: white;
 }
 
-.content h1 {
+.hero__main__firstTitle {
   font-size: 40px;
 }
 
-.content h2 {
+.hero__main__secondTitle {
   font-size: 20px;
 }
 
-.content p {
+.hero__main__text {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.content button {
+.hero__main__button {
   width: 100vw;
   max-width: 301px;
   border-radius: 6px;
