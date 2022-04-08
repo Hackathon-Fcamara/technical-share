@@ -58,7 +58,10 @@ public class UsuarioService {
 			if(compararSenhas(user.get().getSenha(), usuario.get().getSenha())) {
 				user.get().setId(usuario.get().getId());
 				user.get().setNome(usuario.get().getNome());
-				user.get().setSetor(user.get().getSetor());
+				user.get().setCargo(usuario.get().getCargo());
+				user.get().setNivel(usuario.get().getNivel());
+				user.get().setDescricao(usuario.get().getDescricao());
+				user.get().setPortifolio(usuario.get().getPortifolio());
 				user.get().setToken(geradorBasicToken(user.get().getUsuario(), user.get().getSenha()));
 				user.get().setSenha(usuario.get().getSenha());
 				
