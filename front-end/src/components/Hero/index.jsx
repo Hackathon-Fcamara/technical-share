@@ -5,10 +5,10 @@ const {
   hero,
   hero__container, 
   hero__content, 
-  hero__main__firstTitle, 
-  hero__main__secondTitle, 
-  hero__main__text, 
-  hero__main__button
+  hero__firstTitle, 
+  hero__secondTitle, 
+  hero__text, 
+  hero__button
 } = styles;
 
 export function Hero() {
@@ -17,12 +17,12 @@ export function Hero() {
     <section className={hero}>
       <div className={hero__container}>
         <div className={hero__content}>
-          <h1 className={hero__main__firstTitle}>Lorem, ipsum dolor sit amet?</h1>
-          <h2 className={hero__main__secondTitle}>Lorem ipsum dolor sit amet consectetur.</h2>
-          <p className={hero__main__text}>
+          <h1 className={hero__firstTitle}>Lorem, ipsum dolor sit amet?</h1>
+          <h2 className={hero__secondTitle}>Lorem ipsum dolor sit amet consectetur.</h2>
+          <p className={hero__text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis quasi nam labore eius! Repellat inventore, voluptas magnam rerum aliquam saepe nemo distinctio laboriosam laudantium deleniti, consequatur natus quibusdam.
           </p>
-          <button className={hero__main__button}>Busque seu mentor</button>
+          <button type='button' className={hero__button}>Busque seu mentor</button>
         </div>
       </div>
     </section>
