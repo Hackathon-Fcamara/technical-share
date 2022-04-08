@@ -1,0 +1,18 @@
+.benefits__container {
+  max-width: calc(1440px - 3.2rem);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.benefits__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefits__cardImg {
+  width: 100%;
+}
+
+.benefits__cardTitle {
+  margin: 2rem 0 1rem;
+}
