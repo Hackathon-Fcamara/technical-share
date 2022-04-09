@@ -16,7 +16,7 @@ export const Header = () => {
   return (
     <header className={header}>
       <div className={header__container}>
-        <a href="#">
+        <a href="/">
           <img src={logo} alt="Logo da Technical Share" />
         </a>
         <div className={header__wrapper}>

@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { PageHome } from "./components/PageHome";
-import { PageLogin } from "./components/PageLogin";
-import { PageMentor } from "./components/PageMentor";
-import { PageSchedule } from "./components/PageSchedule";
-import { PageFindMentor } from "./components/PageFindMentor";
+import { PageHome } from "./pages/PageHome";
+import { PageLogin } from "./pages/PageLogin";
+import { PageMentor } from "./pages/PageMentor";
+import { PageSchedule } from "./pages/PageSchedule";
+import { PageFindMentor } from "./pages/PageFindMentor";
 
 // STYLES
 import "./global/reset.css";
