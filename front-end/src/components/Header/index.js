@@ -21,7 +21,7 @@ export const Header = () => {
         </a>
         <div className={header__wrapper}>
           <button>Seja um mentor</button>
-          <button class={hamburguer}>
+          <button className={hamburguer}>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
