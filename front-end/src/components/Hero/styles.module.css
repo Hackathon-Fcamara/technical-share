@@ -40,6 +40,10 @@
   color: white;
 }
 
+.hero__content a {
+  width: 300px;
+}
+
 @media (max-width: 425px) {
   .hero__content {
     align-items: center;
@@ -62,12 +66,21 @@
 .hero__button {
   width: 100vw;
   max-width: 300px;
+  border: none;
   border-radius: 6px;
   padding: 15px 0 15px 0px;
+}
+
+.hero__button:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
   .hero__button {
     max-width: 250px;
+  }
+
+  .hero__content a {
+    width: 250px;
   }
 }

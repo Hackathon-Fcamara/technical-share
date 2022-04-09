@@ -10,6 +10,12 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: 1500px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 body {
   /* Chromium */
   -webkit-font-smoothing: antialiased;

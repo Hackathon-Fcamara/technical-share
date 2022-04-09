@@ -16,6 +16,14 @@
   gap: 2.4rem;
 }
 
+.header__wrapperButton {
+  width: 10rem;
+}
+
+.header__wrapperButton:hover{
+  cursor: pointer;
+}
+
 .hamburguer {
   width: 2rem;
   height: 2rem;
