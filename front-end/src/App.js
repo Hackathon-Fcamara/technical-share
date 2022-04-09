@@ -11,11 +11,11 @@ import "./global/reset.css";
 function App() {
   return (
     <Router>
-      <Link to="/home" />
-      <Link to="/login" />
-      <Link to="/findMentor" />
-      <Link to="/schedule" />
-      <Link to="/mentor" />
+      <Link to="/home" aria-label="Página inicial" />
+      <Link to="/login" aria-label="Login" />
+      <Link to="/findMentor" aria-label="Encontre um mentor" />
+      <Link to="/schedule" aria-label="Cronagrama" />
+      <Link to="/mentor" aria-label="Página do mentor" />
       <Routes>
         <Route path="/" element={<PageHome />} />
         <Route path="login" element={<PageLogin />} />
