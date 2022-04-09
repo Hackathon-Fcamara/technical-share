@@ -1,10 +1,14 @@
 package com.technicalShare.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -20,9 +24,10 @@ public class Skils {
 	@NotNull
 	private String skil;
 
-	@ManyToOne
+	@ManyToMany
+	@JoinTable(name = "usuarios_skils", joinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"))
 	@JsonIgnoreProperties("skils")
-	private Usuarios usuarios;
+	private List<Usuarios> usuarios;
 
 	public Long getId() {
 		return id;
@@ -40,11 +45,11 @@ public class Skils {
 		this.skil = skil;
 	}
 
-	public Usuarios getUsuarios() {
+	public List<Usuarios> getUsuarios() {
 		return usuarios;
 	}
 
-	public void setUsuarios(Usuarios usuarios) {
+	public void setUsuarios(List<Usuarios> usuarios) {
 		this.usuarios = usuarios;
 	}
 
