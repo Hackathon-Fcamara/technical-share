@@ -8,6 +8,7 @@ const {
   header,
   header__container,
   header__wrapper,
+  header__wrapperButton,
   hamburguer,
   hamburguer__pipe,
 } = styles;
@@ -21,7 +22,7 @@ export const Header = () => {
         </a>
         <div className={header__wrapper}>
           <a href="/mentor">
-            <input type="submit" value="Seja um mentor"/>
+            <input type="submit" value="Seja um mentor" className={header__wrapperButton}/>
           </a>
           <button type="button" className={hamburguer}>
             <span className={hamburguer__pipe}></span>
