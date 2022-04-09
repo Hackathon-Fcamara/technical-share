@@ -79,4 +79,8 @@
   .hero__button {
     max-width: 250px;
   }
+
+  .hero__content a {
+    width: 250px;
+  }
 }
