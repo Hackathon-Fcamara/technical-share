@@ -1,6 +1,7 @@
 package com.technicalShare.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -39,7 +40,7 @@ public class SkilsController {
 
 	
 	@GetMapping("/nome/{skil}")
-	public ResponseEntity<List<Skils>> getBySkil(@PathVariable String skil) {
+	public ResponseEntity<Optional<Skils>> getBySkil(@PathVariable String skil) {
 		return ResponseEntity.ok(repo.findAllBySkilContainingIgnoreCase(skil));
 	}
 

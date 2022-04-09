@@ -43,7 +43,7 @@ public class UsuarioController {
 		return repo.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 
-	@GetMapping("nome/{nome}")
+	@GetMapping("/nome/{nome}")
 	public ResponseEntity<Optional<Usuarios>> getByName(@PathVariable String nome) {
 		return ResponseEntity.ok(repo.findAllByNomeContainingIgnoreCase(nome));
 	}
