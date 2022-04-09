@@ -12,6 +12,10 @@
   row-gap: 2rem;
 }
 
+.mentor__container a {
+  width: 19.5rem;
+}
+
 .mentor__wrapperFirst {
   grid-area: image;
 }
@@ -33,4 +37,8 @@
   grid-area: button;
   width: 19.5rem;
   justify-self: center;
+}
+
+.mentor__ctaBtn:hover {
+  cursor: pointer;
 }
