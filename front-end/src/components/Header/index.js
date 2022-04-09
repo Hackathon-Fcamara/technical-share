@@ -16,12 +16,14 @@ export const Header = () => {
   return (
     <header className={header}>
       <div className={header__container}>
-        <a href="#">
+        <a href="/">
           <img src={logo} alt="Logo da Technical Share" />
         </a>
         <div className={header__wrapper}>
-          <button>Seja um mentor</button>
-          <button class={hamburguer}>
+          <button type="button">
+            <a href="/mentor">Seja um mentor</a>
+          </button>
+          <button className={hamburguer}>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>

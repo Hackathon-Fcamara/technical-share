@@ -22,7 +22,9 @@ export function Hero() {
           <p className={hero__text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis quasi nam labore eius! Repellat inventore, voluptas magnam rerum aliquam saepe nemo distinctio laboriosam laudantium deleniti, consequatur natus quibusdam.
           </p>
-          <button type='button' className={hero__button}>Busque seu mentor</button>
+          <button type='button' className={hero__button}>
+            <a href="/findMentor">Busque seu mentor</a>
+          </button>
         </div>
       </div>
     </section>
