@@ -27,7 +27,9 @@ export const BecomeMentor = () => {
           neque reprehenderit est odio commodi dignissimos similique corporis
           voluptatibus labore nam.
         </p>
-        <button className={mentor__ctaBtn}>Seja um mentor</button>
+        <button type="button" className={mentor__ctaBtn}>
+          <a href="/mentor">Seja um mentor</a>
+        </button>
       </div>
     </section>
   );

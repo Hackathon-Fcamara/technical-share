@@ -1,3 +1,10 @@
+import { Header } from "../../components/Header";
+
 export const PageMentor = () => {
-  return <h1>Mentor Page</h1>;
+  return(
+    <>
+      <Header />
+      <h1>Mentor Page</h1>
+    </>
+  );
 };
