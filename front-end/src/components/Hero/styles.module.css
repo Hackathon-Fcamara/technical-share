@@ -14,7 +14,7 @@
   width: 100vw;
   max-height: 515px;
   max-width: 1440px;
-  padding: 0 50px 0 50px;
+  padding: 0 20px 0 20px;
   text-align: justify;
 }
 
@@ -22,6 +22,7 @@
   .hero__container {
     text-align: center;
   }
+  
 }
 
 @media (max-width: 461px) {
@@ -45,6 +46,7 @@
   max-width: 520px;
   max-height: 212px;
   color: white;
+  padding-left: 30px;
 }
 
 .hero__content a {
@@ -54,6 +56,7 @@
 @media (max-width: 530px) {
   .hero__content {
     align-items: center;
+    padding: 0;
   }
 }
 
