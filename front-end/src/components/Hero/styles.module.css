@@ -14,7 +14,14 @@
   width: 100vw;
   max-height: 515px;
   max-width: 1440px;
-  padding: 0 80px 0 80px;
+  padding: 0 50px 0 50px;
+  text-align: justify;
+}
+
+@media (max-width: 530px) {
+  .hero__container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 461px) {
@@ -44,7 +51,7 @@
   width: 300px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 530px) {
   .hero__content {
     align-items: center;
   }
