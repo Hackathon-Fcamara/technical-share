@@ -6,6 +6,8 @@ public class UsuarioLogin {
 
 	private String nome;
 
+	private String sobreNome;
+
 	private String usuario;
 
 	private String senha;
@@ -17,6 +19,8 @@ public class UsuarioLogin {
 	private String descricao;
 
 	private String portifolio;
+
+	private String linkedin;
 
 	private String token;
 
@@ -34,6 +38,14 @@ public class UsuarioLogin {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getSobreNome() {
+		return sobreNome;
+	}
+
+	public void setSobreNome(String sobreNome) {
+		this.sobreNome = sobreNome;
 	}
 
 	public String getUsuario() {
@@ -82,6 +94,14 @@ public class UsuarioLogin {
 
 	public void setPortifolio(String portifolio) {
 		this.portifolio = portifolio;
+	}
+
+	public String getLinkedin() {
+		return linkedin;
+	}
+
+	public void setLinkedin(String linkedin) {
+		this.linkedin = linkedin;
 	}
 
 	public String getToken() {

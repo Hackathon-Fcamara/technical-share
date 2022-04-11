@@ -1,7 +1,6 @@
 package com.technicalShare.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -16,14 +15,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.technicalShare.model.Skils;
 import com.technicalShare.repository.SkilsRepository;
+import com.technicalShare.service.SkilsService;
 
 @RestController
 @RequestMapping("/skils")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SkilsController {
+
+	@Autowired
+	private SkilsService service;
 
 	@Autowired
 	private SkilsRepository repo;
@@ -38,24 +40,26 @@ public class SkilsController {
 		return repo.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 
-	
 	@GetMapping("/nome/{skil}")
-	public ResponseEntity<Optional<Skils>> getBySkil(@PathVariable String skil) {
+	public ResponseEntity<List<Skils>> getBySkil(@PathVariable String skil) {
 		return ResponseEntity.ok(repo.findAllBySkilContainingIgnoreCase(skil));
 	}
 
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Skils> cadastrarSkils (@Valid @RequestBody Skils skils){
-		return ResponseEntity.status(HttpStatus.CREATED).body(repo.save(skils));
+	public ResponseEntity<Skils> cadastrarSkil(@RequestBody Skils skil) {
+		return service.cadastrarSkil(skil).map(resp -> ResponseEntity.ok(resp))
+				.orElse(ResponseEntity.status(HttpStatus.BAD_REQUEST).build());
+
 	}
-	
+
+	//Provavelmente não será implementado
 	@PostMapping("/atualizar")
-	public ResponseEntity<Skils> atualizarrSkils (@Valid @RequestBody Skils skils){
+	public ResponseEntity<Skils> atualizarrSkils(@Valid @RequestBody Skils skils) {
 		return ResponseEntity.status(HttpStatus.OK).body(repo.save(skils));
 	}
-	
-	@DeleteMapping ("/{id}")
-	public void deletarSkils (@PathVariable Long id) {
+
+	@DeleteMapping("/{id}")
+	public void deletarSkils(@PathVariable Long id) {
 		repo.deleteById(id);
 	}
 

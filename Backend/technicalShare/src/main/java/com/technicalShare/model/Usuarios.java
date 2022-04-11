@@ -16,6 +16,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity
 @Table(name = "tb_usuarios")
 public class Usuarios {
@@ -25,8 +27,11 @@ public class Usuarios {
 	private Long id;
 	@NotNull
 	private String nome;
-	@Email
 	@NotNull
+	private String sobreNome;
+	@Schema (example = "email@email.com.br")
+	@NotNull(message = "O atributo Usuario é Obrigatorio!")
+	@Email (message = "O atributo usuario deve ser um email valido!")
 	private String usuario;
 	@NotNull
 	private String cargo;
@@ -35,12 +40,16 @@ public class Usuarios {
 	@Size(min = 5, max = 500)
 	private String descricao;
 	private String portifolio;
+	private String linkedin;
 	@NotNull
 	@Size(min = 4, max = 100)
 	private String senha;
 
 	@ManyToMany
-	@JoinTable(name = "usuarios_skils", joinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"))
+	@JoinTable(
+			name = "usuarios_skils", 
+			joinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"), 
+			inverseJoinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"))
 	@JsonIgnoreProperties("usuarios")
 	private List<Skils> skils;
 
@@ -58,6 +67,14 @@ public class Usuarios {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getSobreNome() {
+		return sobreNome;
+	}
+
+	public void setSobreNome(String sobreNome) {
+		this.sobreNome = sobreNome;
 	}
 
 	public String getUsuario() {
@@ -100,6 +117,14 @@ public class Usuarios {
 		this.portifolio = portifolio;
 	}
 
+	public String getLinkedin() {
+		return linkedin;
+	}
+
+	public void setLinkedin(String linkedin) {
+		this.linkedin = linkedin;
+	}
+
 	public String getSenha() {
 		return senha;
 	}
@@ -115,5 +140,9 @@ public class Usuarios {
 	public void setSkils(List<Skils> skils) {
 		this.skils = skils;
 	}
+
+	
+	
+	
 
 }
