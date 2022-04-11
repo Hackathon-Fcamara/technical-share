@@ -15,13 +15,13 @@ function App() {
       <Link to="/login" aria-label="Login" />
       <Link to="/findMentor" aria-label="Encontre um mentor" />
       <Link to="/schedule" aria-label="Cronagrama" />
-      <Link to="/mentor" aria-label="Página do mentor" />
+      <Link to="/mentorPage" aria-label="Página do mentor" />
       <Routes>
         <Route path="/" element={<PageHome />} />
         <Route path="login" element={<PageLogin />} />
         <Route path="findMentor" element={<PageFindMentor />} />
         <Route path="schedule" element={<PageSchedule />} />
-        <Route path="mentor" element={<PageMentor />} />
+        <Route path="mentorPage" element={<PageMentor />} />
       </Routes>
     </Router>
   );
