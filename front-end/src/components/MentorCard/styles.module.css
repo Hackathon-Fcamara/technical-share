@@ -1,0 +1,23 @@
+.mentorCard {
+  display: flex;
+}
+
+.mentorCard__img {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.mentorCard__textWrapper {
+  padding: 2rem;
+  width: 100%;
+}
+
+.mentorCard__skillList {
+  margin-top: 2rem;
+}
+
+.mentorCard__scheduleLink {
+  text-align: center;
+  display: block;
+}
