@@ -1,0 +1,9 @@
+.mentorMain__container {
+  padding: 2rem;
+}
+
+.mentorList {
+  display: grid;
+  grid-template: 1fr / auto;
+  row-gap: 2rem;
+}
