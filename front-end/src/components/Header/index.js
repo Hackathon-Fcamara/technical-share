@@ -21,7 +21,7 @@ export const Header = () => {
           <img src={logo} alt="Logo da Technical Share" />
         </a>
         <div className={header__wrapper}>
-          <a href="/mentor">
+          <a href="/mentorPage">
             <input type="submit" value="Seja um mentor" className={header__wrapperButton}/>
           </a>
           <button type="button" className={hamburguer}>
