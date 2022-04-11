@@ -1,4 +1,4 @@
-export function mentorAbout() {
+export function aboutMentor() {
   return (
     <section className={about}>
       <div className={about__infoWrapper}>

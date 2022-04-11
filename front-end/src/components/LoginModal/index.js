@@ -1,4 +1,4 @@
-export function modalLogin() {
+export function loginModal() {
   return (
     <section className={login}>
       <h2 className={login__title}></h2>
