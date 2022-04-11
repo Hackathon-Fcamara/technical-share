@@ -1,0 +1,130 @@
+.faq {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-height: 440px;
+}
+
+.faq__container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  max-height: 440px;
+  max-width: 1440px;
+  background: rgb(197, 197, 197);
+}
+
+.faq__contentFAQ {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  max-height: 440px;
+  max-width: 720px;
+  padding-left: 50px;
+  border-right: 1px solid black;
+}
+
+.faq__select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  max-height: 350px;
+  max-width: 595px;
+}
+
+.faq__selectTitle {
+  display: flex;
+  align-items: center;
+  color: white;
+  background: black;
+  height: 30px;
+  width: 100%;
+  max-width: 450px;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.faq__select select {
+  border: none;
+  border-radius: 5px;
+  height: 45px;
+}
+
+.faq__select select:hover {
+  cursor: pointer;
+}
+
+.faq__contentCTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 440px;
+  max-width: 720px;
+  padding-right: 50px;
+}
+
+.faq__CTA {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;  
+  width: 100vw;
+  height: 100vh;
+  max-width: 410px;
+  max-height: 340px;
+  background-image: url(https://picsum.photos/410/340);
+  border-radius: 8px;
+}
+
+.faq__CTA input {
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  width: 100%;
+  width: 280px;
+  padding: 12px 20px;
+}
+
+.faq__CTA input:hover {
+  cursor: pointer;
+}
+
+@media(max-width: 1290px) {
+  .faq {
+    display: grid;
+    justify-content: center;
+    max-height: 880px;
+  }
+
+  .faq__container {
+    max-height: 880px;
+    max-width: 720px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 720px));
+  }
+
+  .faq__contentFAQ {
+    justify-content: center;
+    border: none;
+    padding: 0;
+  }
+
+  .faq__contentCTA {
+    border-top: 1px solid black;
+    padding: 0;
+  }
+}
+
+@media(max-width: 1290px) {
+  .faq__select {
+    padding: 0 20px;
+  }
+}
