@@ -1,10 +1,13 @@
 import { Header } from "../../components/Header";
+import { SignInFom } from "../../components/SignInForm";
+import { Footer } from "../../components/Footer";
 
 export const PageMentor = () => {
   return(
     <>
       <Header />
-      <h1>Mentor Page</h1>
+      <SignInFom />
+      <Footer />
     </>
   );
 };
