@@ -1,10 +1,11 @@
 import { Header } from "../../components/Header";
+import { MentorMain } from "../../components/MentorMain";
 
 export const PageMentor = () => {
-  return(
+  return (
     <>
       <Header />
-      <h1>Mentor Page</h1>
+      <MentorMain />
     </>
   );
 };
