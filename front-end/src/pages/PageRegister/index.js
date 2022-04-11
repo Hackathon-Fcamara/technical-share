@@ -3,7 +3,7 @@ import { Footer } from "../../components/Footer";
 import { SignInForm } from "../../components/SignInForm";
 import { SignUpForm } from "../../components/SignUpForm";
 
-export const PageLogin = () => {
+export const PageRegister = () => {
   return (
     <>
       <Header />
