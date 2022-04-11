@@ -1,11 +1,12 @@
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { ContactForm } from "../../components/ContactForm";
 
 export const PageSchedule = () => {
-  return(
+  return (
     <>
       <Header />
-      <h1>Schedule Page</h1>
+      <ContactForm />
       <Footer />
     </>
   );
