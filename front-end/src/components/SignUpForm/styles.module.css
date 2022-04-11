@@ -1,0 +1,20 @@
+.signUpForm__container {
+  padding: 2rem;
+}
+
+.signUpForm__label {
+  display: block;
+}
+
+.signUpForm__labelText {
+  display: block;
+}
+
+.signUpForm__nameWrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.signUpForm__input {
+  width: 100%;
+}

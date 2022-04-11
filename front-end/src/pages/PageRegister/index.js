@@ -1,8 +1,8 @@
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
-export const PageLogin = () => {
-  return(
+export const PageRegister = () => {
+  return (
     <>
       <Header />
       <h1>Login Page</h1>
