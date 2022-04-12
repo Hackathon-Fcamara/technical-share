@@ -19,6 +19,7 @@
   position: relative;
   border-radius: 8px;
   padding: 25px;
+  outline: none;
 }
 
 .modalEmail__content {
