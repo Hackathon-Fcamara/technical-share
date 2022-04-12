@@ -1,0 +1,27 @@
+.globalForm__label {
+  display: block;
+}
+
+.globalForm__input {
+  width: 100%;
+}
+
+.globalForm__labelText {
+  display: block;
+}
+
+.globalBtn {
+  height: 4rem;
+  padding: 1.2rem 3rem;
+  font-size: var(--fs-btnSm);
+  color: var(--white);
+  font-weight: 700;
+  background: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25rem;
+  border-radius: 0.6rem;
+  line-height: var(--lh-btn);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}

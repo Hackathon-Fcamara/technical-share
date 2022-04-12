@@ -9,6 +9,7 @@ import { PageFindMentor } from "./pages/PageFindMentor";
 import "./global/variables.css";
 import "./global/reset.css";
 import "./global/fonts.css";
+import "./global/globalStylesLeonardo.css";
 
 function App() {
   return (
