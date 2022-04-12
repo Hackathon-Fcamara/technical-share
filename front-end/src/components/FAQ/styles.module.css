@@ -25,7 +25,7 @@
   height: 100vh;
   max-height: 440px;
   max-width: 720px;
-  padding-left: 50px;
+  padding: 0 50px;
   border-right: 1px solid black;
 }
 
@@ -69,7 +69,7 @@
   height: 100vh;
   max-height: 440px;
   max-width: 720px;
-  padding-right: 50px;
+  padding: 0 50px;
 }
 
 .faq__CTA {
@@ -117,14 +117,12 @@
     padding: 0;
   }
 
+  .faq__select {
+    padding: 0 20px;
+  }
+
   .faq__contentCTA {
     border-top: 1px solid black;
     padding: 0;
-  }
-}
-
-@media(max-width: 1290px) {
-  .faq__select {
-    padding: 0 20px;
   }
 }
