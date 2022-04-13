@@ -10,6 +10,7 @@ import "./global/variables.css";
 import "./global/reset.css";
 import "./global/fonts.css";
 import "./global/globalStylesLeonardo.css";
+import "./global/globalStylesBrian.css";
 
 function App() {
   return (
