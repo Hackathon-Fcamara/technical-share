@@ -1,5 +1,4 @@
 import styles from "./styles.module.css";
-import iconArrow from "../../assets/images/icon-arrow.svg";
 const {
   contactForm,
   contactForm__container,

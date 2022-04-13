@@ -1,128 +1,64 @@
 import styles from "./styles.module.css";
+import { FormInput } from "../FormInput";
+import { FormSelect } from "../FormSelect";
+import { FormTextarea } from "../FormTextarea";
 
 const {
-  signUpForm__container,
-  signUpForm__nameWrapper,
-  signUpForm__label,
-  signUpForm__input,
-  signUpForm__labelText,
+  signUp,
+  signUp__container,
+  signUpForm,
+  signUpForm__wrapper,
+  signUpForm__textDivider,
+  signUpForm__textNote,
+  signUpForm__btn,
 } = styles;
 
-export const SignUpForm = () => {
+export const SignUp = () => {
   return (
-    <form className="signUpForm">
-      <div className={signUpForm__container}>
-        <div className={signUpForm__nameWrapper}>
-          <label htmlFor="firstName" className={signUpForm__label}>
-            <span className={signUpForm__labelText}>Nome</span>
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              className={signUpForm__input}
-            />
-          </label>
-          <label htmlFor="lastName" className={signUpForm__label}>
-            <span className={signUpForm__labelText}>Sobrenome</span>
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              className={signUpForm__input}
-            />
-          </label>
-        </div>
-        <label htmlFor="email" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>E-mail</span>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            className="signUpForm__input"
-          />
-        </label>
-        <label htmlFor="password" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>Senha</span>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            className="signUpForm__input"
-          />
-        </label>
-        <label htmlFor="password" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>Confirmar senha*</span>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            className="signUpForm__input"
-          />
-        </label>
-        <p>Informações do perfil</p>
-        <label htmlFor="role" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>Cargo</span>
-          <select id="role" className="signUpForm__select">
-            <option value="default">Default</option>
-          </select>
-        </label>
-        <label htmlFor="level" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>Nível</span>
-          <select id="level" className="signUpForm__select">
-            <option value="default">Default</option>
-          </select>
-        </label>
-        <p>
-          Cite pelo menos uma habilidade que você se sente confortável em
-          mentorar
+    <section className={signUp}>
+      <div className={signUp__container}>
+        <h2 className="globalRegister__title">Cadastre-se agora</h2>
+        <p className="globalRegister__message">
+          E conheça o melhor caminho para o seu desenvolvimento profissional
         </p>
-        <label htmlFor="skill" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>Habilidade</span>
-          <select id="skill" className="signUpForm__select">
-            <option value="default">Default</option>
-          </select>
-        </label>
-        <label htmlFor="about" className={signUpForm__label}>
-          <span className={signUpForm__labelText}>Sobre</span>
-          <textarea
-            name="about"
-            id="about"
-            cols="30"
-            rows="10"
-            className="signUpForm__about"
-          ></textarea>
-        </label>
-        <label htmlFor="linkedin" className={signUpForm__label}>
-          <span className={signUpForm__labelText}></span>
-          <input
-            type="text"
-            name="linkedin"
-            id="linkedin"
-            className="signUpForm__input"
+        <form className={signUpForm}>
+          <div className={signUpForm__wrapper}>
+            <FormInput labelText="Nome*" inputType="text" idVal="firstName" />
+            <FormInput
+              labelText="Sobrenome*"
+              inputType="text"
+              idVal="lastName"
+            />
+          </div>
+          <FormInput labelText="E-mail*" inputType="email" idVal="email" />
+          <FormInput labelText="Senha*" inputType="password" idVal="password" />
+          <FormInput
+            labelText="Confirmar senha*"
+            inputType="password"
+            idVal="password"
           />
-        </label>
-        <label htmlFor="portfolio" className={signUpForm__label}>
-          <span className={signUpForm__labelText}></span>
-          <input
-            type="text"
-            name="portfolio"
-            id="portfolio"
-            className="signUpForm__input"
-          />
-        </label>
-        <label htmlFor="social" className={signUpForm__label}>
-          <span className={signUpForm__labelText}></span>
-          <input
-            type="text"
-            name="social"
-            id="social"
-            className="signUpForm__input"
-          />
-        </label>
-        <button type="submit" className="signUpForm__submitBtn">
-          Cadastrar
-        </button>
+          <p className={signUpForm__textDivider}>Informações do perfil</p>
+          <div className={signUpForm__wrapper}>
+            <FormSelect labelText="Cargo" idVal="role" optList={[]} />
+            <FormSelect labelText="Nível" idVal="level" optList={[]} />
+          </div>
+          <FormSelect labelText="Habilidade" idVal="skill" optList={[]} />
+          <p className={signUpForm__textNote}>
+            Cite pelo menos uma habilidade que você se sente confortável em
+            mentorar.
+          </p>
+          <FormTextarea labelText="Sobre" idVal="about" optList={[]} />
+          <FormInput labelText="LinkedIn" inputType="text" idVal="linkedin" />
+          <FormInput labelText="Portfolio" inputType="text" idVal="portfolio" />
+          <FormInput labelText="Rede Social" inputType="text" idVal="social" />
+          <button
+            type="submit"
+            className={`${signUpForm__btn} globalBtn globalBtn--primary`}
+          >
+            Cadastrar
+          </button>
+        </form>
       </div>
-    </form>
+    </section>
   );
 };
