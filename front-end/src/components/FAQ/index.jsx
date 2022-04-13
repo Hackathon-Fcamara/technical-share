@@ -20,11 +20,21 @@ export function FAQ() {
             <div className={faq__selectTitle}>
               <h1>FAQ</h1>
             </div>
-            <select></select>
-            <select></select>
-            <select></select>
-            <select></select>
-            <select></select>
+            <select>
+              <option>O que é uma mentoria?</option>
+            </select>
+            <select>
+              <option>Como acontecerá cada mentoria?</option>
+            </select>
+            <select>
+              <option>Quem pode se tornar mentor?</option>
+            </select>
+            <select>
+              <option>Quem pode ser mentorado?</option>
+            </select>
+            <select>
+              <option>Achei o mentor, e agora?</option>
+            </select>
           </div>
         </div>
         <div className={faq__contentCTA}>
