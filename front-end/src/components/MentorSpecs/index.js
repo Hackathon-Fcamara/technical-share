@@ -1,5 +1,8 @@
 import React from "react";
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
+import illustration from "../../assets/images/image-foto-illustration.png";
+import { IoLogoLinkedin } from "react-icons/io";
+import { RiEarthLine } from "react-icons/ri";
 
 const { 
   mentorSpecs, 
@@ -20,7 +23,7 @@ export function MentorSpecs() {
         <div className={mentorSpecs__content}>
             <figure className={mentorSpecs__contentPhoto}>
               <img 
-                src="https://picsum.photos/295/300" 
+                src={illustration} 
                 alt="Foto do perfil" 
                 className={mentorSpecs__contentImg}
               />
@@ -31,17 +34,15 @@ export function MentorSpecs() {
             </div>
             <h1>Habilidades</h1>
             <div className={mentorSpecs__contentSkills}>
-              <h1>CSS</h1>
-              <h1>React</h1>
-              <h1>Angular</h1>
-              <h1>HTML</h1>
+              <h1>Tags</h1>
+              <h1>Tags</h1>
+              <h1>Tags</h1>
+              <h1>Tags</h1>
             </div>
             <h1>Redes Sociais</h1>
             <div className={mentorSpecs__contentSocial}>
-              <span className={mentorSpecs__contentIcon}></span>
-              <span className={mentorSpecs__contentIcon}></span>
-              <span className={mentorSpecs__contentIcon}></span>
-              <span className={mentorSpecs__contentIcon}></span>
+              <span><IoLogoLinkedin className={mentorSpecs__contentIcon} /></span>
+              <span><RiEarthLine className={mentorSpecs__contentIcon} /></span>
             </div>
         </div>
       </div>
