@@ -6,18 +6,49 @@
   width: 13rem;
   height: 13rem;
   object-fit: cover;
+  border-radius: 0.4rem;
 }
 
 .mentorCard__textWrapper {
   padding: 2rem;
   width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--fs-title-5);
+  line-height: 1.4rem;
+  color: var(--purple-dark);
 }
 
 .mentorCard__skillList {
-  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+}
+
+.mentorCard__skillList li {
+  background: var(--purple);
+  color: var(--white);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-tagFluid);
+  line-height: 1.2rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
 }
 
 .mentorCard__scheduleLink {
+  padding-top: 0.5rem;
+  border-radius: 0.6rem;
+  color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  max-width: 15rem;
+  max-height: 2.6rem;
   text-align: center;
   display: block;
+  background: var(--orange);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-btnFluidSm);
+  line-height: 1.6rem;
 }
