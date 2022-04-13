@@ -1,5 +1,5 @@
 .header {
-  background: #c4c4c4;
+  background: #09003e;
 }
 
 .header__container {
@@ -17,11 +17,25 @@
 }
 
 .header__wrapperButton {
-  width: 10rem;
+  width: auto;
+  border: 1px solid #e9542e;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  color: #e9542e;
+  background: none;
+  margin-right: 10px;
 }
 
-.header__wrapperButton:hover{
+.header__wrapperButton:hover {
   cursor: pointer;
+  background-color: #0e005f;
+}
+
+.hamburguer__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 }
 
 .hamburguer {
@@ -30,11 +44,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: none;
 }
 
 .hamburguer__pipe {
   display: block;
-  background: #000;
+  background: #ffffff;
   border-radius: 200px;
   height: 0.2rem;
   width: 100%;

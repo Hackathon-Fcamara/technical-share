@@ -10,6 +10,7 @@ const {
   header__wrapper,
   header__wrapperButton,
   hamburguer,
+  hamburguer__wrapper,
   hamburguer__pipe,
 } = styles;
 
@@ -22,13 +23,19 @@ export const Header = () => {
         </a>
         <div className={header__wrapper}>
           <a href="/mentorPage">
-            <input type="submit" value="Seja um mentor" className={header__wrapperButton}/>
-          </a>
+            <input
+              type="submit"
+              value="Seja um mentor"
+              className={header__wrapperButton}
+            />
+          </a>{" "}
+        </div>
+        <div className={hamburguer__wrapper}>
           <button type="button" className={hamburguer}>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
-          </button>
+          </button>{" "}
         </div>
       </div>
     </header>
