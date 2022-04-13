@@ -1,5 +1,15 @@
-.signUpForm__container {
-  padding: 2rem;
+.signUp {
+  padding: 0 2.4rem;
+}
+
+.signUp__container {
+  padding: 2.4rem 0 4.8rem;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 .signUpForm__label {
@@ -10,11 +20,31 @@
   display: block;
 }
 
-.signUpForm__nameWrapper {
+.signUpForm__wrapper {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
 .signUpForm__input {
   width: 100%;
+}
+
+.signUpForm__select {
+  width: 100%;
+  background: red;
+}
+
+.signUpForm__textDivider {
+  font-size: var(--fs-title-6);
+}
+
+.signUpForm__textNote {
+  font-size: 1rem;
+}
+
+.signUpForm__btn {
+  max-width: initial;
+  margin-top: 1.6rem;
+  height: 4.8rem;
 }
