@@ -2,6 +2,7 @@ package com.technicalShare.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -52,6 +54,11 @@ public class Usuarios {
 			inverseJoinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"))
 	@JsonIgnoreProperties("usuarios")
 	private List<Skils> skils;
+	
+	@OneToMany(mappedBy = "usuarios", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuarios")
+	private List<Depoimentos> depoimentos;
+	
 
 	public Long getId() {
 		return id;
@@ -140,6 +147,16 @@ public class Usuarios {
 	public void setSkils(List<Skils> skils) {
 		this.skils = skils;
 	}
+
+	public List<Depoimentos> getDepoimentos() {
+		return depoimentos;
+	}
+
+	public void setDepoimentos(List<Depoimentos> depoimentos) {
+		this.depoimentos = depoimentos;
+	}
+	
+	
 
 	
 	
