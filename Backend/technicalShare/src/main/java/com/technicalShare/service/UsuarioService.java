@@ -1,6 +1,7 @@
 package com.technicalShare.service;
 
 import java.nio.charset.Charset;
+
 import java.util.Optional;
 
 import org.apache.tomcat.util.codec.binary.Base64;
@@ -58,7 +59,7 @@ public class UsuarioService {
 			if (compararSenhas(user.get().getSenha(), usuario.get().getSenha())) {
 				user.get().setId(usuario.get().getId());
 				user.get().setNome(usuario.get().getNome());
-				user.get().setSobreNome(usuario.get().getSobreNome());
+				// user.get().setSobreNome(usuario.get().getSobreNome());
 				user.get().setCargo(usuario.get().getCargo());
 				user.get().setNivel(usuario.get().getNivel());
 				user.get().setDescricao(usuario.get().getDescricao());

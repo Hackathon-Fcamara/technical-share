@@ -29,11 +29,9 @@ public class Usuarios {
 	private Long id;
 	@NotNull
 	private String nome;
-	@NotNull
-	private String sobreNome;
-	@Schema (example = "email@email.com.br")
+	@Schema(example = "email@email.com.br")
 	@NotNull(message = "O atributo Usuario é Obrigatorio!")
-	@Email (message = "O atributo usuario deve ser um email valido!")
+	@Email(message = "O atributo usuario deve ser um email valido!")
 	private String usuario;
 	@NotNull
 	private String cargo;
@@ -48,17 +46,17 @@ public class Usuarios {
 	private String senha;
 
 	@ManyToMany
-	@JoinTable(
-			name = "usuarios_skils", 
-			joinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"), 
-			inverseJoinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"))
+	@JoinTable(name = "usuarios_skils", joinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"))
 	@JsonIgnoreProperties("usuarios")
 	private List<Skils> skils;
-	
+
 	@OneToMany(mappedBy = "usuarios", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuarios")
 	private List<Depoimentos> depoimentos;
-	
+
+	@OneToMany(mappedBy = "usuarios", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuarios")
+	private List<Agenda> agenda;
 
 	public Long getId() {
 		return id;
@@ -74,14 +72,6 @@ public class Usuarios {
 
 	public void setNome(String nome) {
 		this.nome = nome;
-	}
-
-	public String getSobreNome() {
-		return sobreNome;
-	}
-
-	public void setSobreNome(String sobreNome) {
-		this.sobreNome = sobreNome;
 	}
 
 	public String getUsuario() {
@@ -155,11 +145,13 @@ public class Usuarios {
 	public void setDepoimentos(List<Depoimentos> depoimentos) {
 		this.depoimentos = depoimentos;
 	}
-	
-	
 
-	
-	
-	
+	public List<Agenda> getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(List<Agenda> agenda) {
+		this.agenda = agenda;
+	}
 
 }
