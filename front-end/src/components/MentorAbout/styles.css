@@ -1,0 +1,9 @@
+.about {
+  background-color: none;
+  align-items: center;
+  color: black;
+}
+
+.about__info {
+  text-align: center;
+}

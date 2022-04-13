@@ -1,21 +1,18 @@
+import React from "react";
+import styles from "./styles.css";
+
+const { about, about__info } = styles;
+
 export function mentorAbout() {
   return (
     <section className={about}>
-      <div className={about__infoWrapper}>
-        <button className={about__button}>
-          <p className={about__info}></p>
-        </button>
-        <div className={about__depoimentsWrapper}>
-          <button className={about__secondButton}>
-            <p className={about__depoiments}></p>
-          </button>
-          <div className={about__statisticsWrapper}>
-            <button className={about__thirdButton}>
-              <p className={about__statistics}></p>
-            </button>
-          </div>
-        </div>
-      </div>
+      <h2>Sobre</h2>
+      <p className={about__info}>
+        Sou Formado em Engenharia Civil e acabei conhecendo o desenvolvimento de
+        sistemas por um amigo. Fiz cursos na área, sempre me aperfeiçoando nas
+        diversas linguagens. Me tornei head em uma equipe e nunca parei de me
+        aperfeiçoar em outras áreas pessoais. Hoje sou Sênior na FCamara.
+      </p>
     </section>
   );
 }
