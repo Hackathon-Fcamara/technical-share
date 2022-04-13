@@ -33,3 +33,11 @@
   background: transparent;
   border: 2px solid var(--orange);
 }
+
+.globalTitle {
+  font-size: var(--fs-title-3);
+  text-align: center;
+  font-weight: 600;
+  color: var(--purple);
+  margin-bottom: 3.2rem;
+}
