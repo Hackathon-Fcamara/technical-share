@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import illustration from "../../assets/images/image-foto-illustration.png";
 
 const {
   mentorCard,
@@ -13,7 +14,7 @@ export const MentorCard = () => {
     <div className={mentorCard}>
       <figure className="mentorCard__imgWrapper">
         <img
-          src="http://via.placeholder.com/640x360"
+          src={illustration}
           alt="Foto do mentor"
           className={mentorCard__img}
         />
@@ -22,7 +23,9 @@ export const MentorCard = () => {
         <h3 className="mentorCard__name">Placeholder name</h3>
         <span className="mentorCard__role">Placeholder skill</span>
         <ul className={mentorCard__skillList}>
-          <li className="mentorCard__skill"></li>
+          <li className="mentorCard__skill">CSS</li>
+          <li className="mentorCard__skill">React</li>
+          <li className="mentorCard__skill">Angular</li>
         </ul>
         <a href="" className={mentorCard__scheduleLink}>
           Visitar perfil

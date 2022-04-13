@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import illustration from "../../assets/images/image-becomeMentor-illustration.png";
 
 const {
   mentor__container,
@@ -15,19 +16,16 @@ export const BecomeMentor = () => {
       <div className={mentor__container}>
         <div className={mentor__wrapperFirst}>
           <img
-            src="http://via.placeholder.com/640x360"
+            src={illustration}
             alt="Ilustração sobre porque ser uma mentor da plataforma"
             className={mentor__pic}
           />
         </div>
         <h2 className={mentor__title}>Por que ser um mentor?</h2>
         <p className={mentor__text}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-          autem, error itaque quo doloribus porro? Officiis ducimus, quam quod
-          neque reprehenderit est odio commodi dignissimos similique corporis
-          voluptatibus labore nam.
+         Ajude pessoas de todos os níveis a alcançarem seus objetivos profissionais. Ensine, inspire e contribua para o desenvolvimento de novos talentos.
         </p>
-        <a href="/mentor">
+        <a href="/mentorPage">
           <input type="submit" value="Seja um mentor" className={mentor__ctaBtn}/>
         </a>
       </div>

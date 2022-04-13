@@ -3,7 +3,7 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  max-height: 440px;
+  max-height: 44rem;
 }
 
 .faq__container {
@@ -13,9 +13,8 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  max-height: 440px;
-  max-width: 1440px;
-  background: rgb(197, 197, 197);
+  max-height: 44rem;
+  max-width: 144rem;
 }
 
 .faq__contentFAQ {
@@ -23,10 +22,10 @@
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  max-height: 440px;
-  max-width: 720px;
-  padding: 0 50px;
-  border-right: 1px solid black;
+  max-height: 44rem;
+  max-width: 72rem;
+  padding: 0 5rem;
+  border-right: 0.1rem solid black;
 }
 
 .faq__select {
@@ -35,27 +34,35 @@
   justify-content: space-between;
   height: 100vh;
   width: 100%;
-  max-height: 350px;
-  max-width: 595px;
+  max-height: 35rem;
+  max-width: 59.5rem;
 }
 
 .faq__selectTitle {
   display: flex;
+  justify-content: center;
   align-items: center;
-  color: white;
-  background: black;
-  height: 30px;
+  color: var(--black);
+  height: 3rem;
   width: 100%;
-  max-width: 450px;
-  font-size: 15px;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  max-width: 60rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
 }
 
 .faq__select select {
   border: none;
-  border-radius: 5px;
-  height: 45px;
+  border-radius: 0.8rem;
+  height: 4.5rem;
+  background: var(--purple);
+  color: var(--white);
+  padding-left: 2.4rem;
+  font-family: "Metropolis";
+  font-weight: 500;
+  font-size: var(--fs-title-5);
+  line-height: var(--lh-textLg);
+  outline: none;
 }
 
 .faq__select select:hover {
@@ -67,9 +74,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  max-height: 440px;
-  max-width: 720px;
-  padding: 0 50px;
+  max-height: 44rem;
+  max-width: 72rem;
+  padding: 0 5rem;
 }
 
 .faq__CTA {
@@ -78,20 +85,20 @@
   align-items: flex-end;  
   width: 100vw;
   height: 100vh;
-  max-width: 410px;
-  max-height: 340px;
+  max-width: 41rem;
+  max-height: 34rem;
   background-image: url(https://picsum.photos/410/340);
-  border-radius: 8px;
+  border-radius: 0.8rem;
 }
 
 .faq__CTA input {
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   background: white;
   color: black;
   width: 100%;
-  width: 280px;
-  padding: 12px 20px;
+  width: 28rem;
+  padding: 1.2rem 2rem;
 }
 
 .faq__CTA input:hover {
@@ -102,12 +109,12 @@
   .faq {
     display: grid;
     justify-content: center;
-    max-height: 880px;
+    max-height: 88rem;
   }
 
   .faq__container {
-    max-height: 880px;
-    max-width: 720px;
+    max-height: 88rem;
+    max-width: 72rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 720px));
   }
 
@@ -118,11 +125,11 @@
   }
 
   .faq__select {
-    padding: 0 20px;
+    padding: 0 2rem;
   }
 
   .faq__contentCTA {
-    border-top: 1px solid black;
+    border-top: 0.1rem solid black;
     padding: 0;
   }
 }
