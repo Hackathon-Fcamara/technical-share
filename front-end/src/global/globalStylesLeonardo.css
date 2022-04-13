@@ -2,12 +2,58 @@
   display: block;
 }
 
-.globalForm__input {
-  width: 100%;
+.globalForm__input,
+.globalForm__select,
+.globalForm__message {
+  border: 2px solid var(--purple);
+  display: flex;
+  border-radius: 1.2rem;
+  padding: 0 1.2rem;
+  background: var(--white);
+}
+
+.globalForm__input,
+.globalForm__select {
+  height: 4.4rem;
 }
 
 .globalForm__labelText {
   display: block;
+  font-size: var(--fs-subLg);
+  margin-bottom: 0.8rem;
+  line-height: var(--lh-label);
+  font-weight: 500;
+}
+
+.globalForm__selectWrapper {
+  position: relative;
+}
+
+.globalForm__select {
+  appearance: none;
+  position: relative;
+}
+
+.globalForm__selectArrow {
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  top: 0;
+  right: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.globalForm__select::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0.8rem;
+  background: red;
 }
 
 .globalBtn {
