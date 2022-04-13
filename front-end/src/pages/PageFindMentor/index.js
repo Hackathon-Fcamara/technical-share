@@ -1,11 +1,12 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
+import { SearchMentor } from "../../components/SearchMentor";
 
 export const PageFindMentor = () => {
-  return(
+  return (
     <>
       <Header />
-      <h1>Find a mentor</h1>
+      <SearchMentor />
       <Footer />
     </>
   );
