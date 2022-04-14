@@ -1,7 +1,7 @@
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import { MentorMain } from "../../components/MentorMain";
 import { MentorSpecs } from "../../components/MentorSpecs";
+import { MentorAbout } from "../../components/MentorAbout";
 import { ModalEmail } from "../../components/ModalEmail";
 import { useState } from "react";
 
@@ -12,11 +12,13 @@ export const PageMentor = () => {
     <>
       <Header />
       <MentorSpecs />
+      <MentorAbout />
+
       <Footer />
-      <MentorMain />
-      <ModalEmail 
-        isOpen={ModalEmailOpen} 
-        onRequestClose={() => setModalEmailOpen(false)}/>
+      {/* <ModalEmail
+        isOpen={ModalEmailOpen}
+        onRequestClose={() => setModalEmailOpen(false)}
+      /> */}
     </>
   );
 };
