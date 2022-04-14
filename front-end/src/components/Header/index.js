@@ -1,24 +1,33 @@
+import { useState } from "react";
+
 // STYLES
 import styles from "./styles.module.css";
 
 const {
   header,
   header__container,
-  header__wrapper,
-  header__wrapperButton,
+  header__logo,
+  header__ctaBtn,
+  header__menuWrapper,
+  header__menu,
+  header__menuList,
+  header__menuLink,
   hamburguer,
   hamburguer__wrapper,
   hamburguer__pipe,
+  hamburguer__menu,
+  hamburguer__opt,
+  hamburguer__optLink,
+  hamburguer__optBtn,
 } = styles;
 
 export const Header = () => {
+  const [showHamburguerOpts, setShowHamburguerOpts] = useState(false);
   return (
     <header className={header}>
       <div className={header__container}>
-        <a href="/">
+        <a href="/home" className={header__logo}>
           <svg
-            width="50"
-            height="40"
             viewBox="0 0 30 26"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -61,23 +70,79 @@ export const Header = () => {
             </defs>
           </svg>
         </a>
-        <div className={header__wrapper}>
-          <a href="/mentorPage">
-            <input
-              type="submit"
-              value="Seja um mentor"
-              className={header__wrapperButton}
-            />
-          </a>{" "}
+        <div className={header__menuWrapper}>
+          <nav className={header__menu}>
+            <ul className={header__menuList}>
+              <li className="header__menuOpt">
+                <a href="/home" className={header__menuLink}>
+                  Home
+                </a>
+              </li>
+              <li className="header__menuOpt">
+                <a href="/findMentor" className={header__menuLink}>
+                  Busque um mentor
+                </a>
+              </li>
+              <li className="header__menuOpt">
+                <a href="/home" className={header__menuLink}>
+                  Vantagens
+                </a>
+              </li>
+              <li className="header__menuOpt">
+                <a href="/home" className={header__menuLink}>
+                  FAQ
+                </a>
+              </li>
+              <li className="header__menuOpt">
+                <a href="" className={header__menuLink}>
+                  Login do mentor
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="/register"
+            className={`${header__ctaBtn} globalBtn globalBtn--secondary `}
+          >
+            Seja um mentor
+          </a>
         </div>
         <div className={hamburguer__wrapper}>
-          <button type="button" className={hamburguer}>
+          <button
+            type="button"
+            className={hamburguer}
+            onClick={() => setShowHamburguerOpts(!showHamburguerOpts)}
+          >
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
             <span className={hamburguer__pipe}></span>
-          </button>{" "}
+          </button>
         </div>
       </div>
+      {showHamburguerOpts && (
+        <nav className={hamburguer__menu}>
+          <ul className="hamburguer__optList">
+            <li className={hamburguer__opt}>
+              <a href="#findMentor" className={hamburguer__optLink}>
+                Busque um mentor
+              </a>
+            </li>
+            <li className={hamburguer__opt}>
+              <a href="#benefits" className={hamburguer__optLink}>
+                Vantagens
+              </a>
+            </li>
+            <li className={hamburguer__opt}>
+              <a href="#faq" className={hamburguer__optLink}>
+                FAQ
+              </a>
+            </li>
+            <li className={hamburguer__opt}>
+              <button className={hamburguer__optBtn}>Login do mentor</button>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
