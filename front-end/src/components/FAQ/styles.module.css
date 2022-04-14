@@ -81,24 +81,37 @@
 
 .faq__CTA {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;  
+  /* justify-content: center;
+  align-items: flex-end;   */
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   max-width: 41rem;
   max-height: 34rem;
-  background-image: url(https://picsum.photos/410/340);
   border-radius: 0.8rem;
+}
+
+.faq__contentCTAImg {
+  width: 100%;
+  height: 100%;
+  max-width: 51.2rem;
+  max-height: 37.2rem;
 }
 
 .faq__CTA input {
   border: none;
-  border-radius: 0.5rem;
-  background: white;
+  border-radius: 0.6rem;
+  background: #E9542E;
   color: black;
   width: 100%;
-  width: 28rem;
-  padding: 1.2rem 2rem;
+  height: 100%;
+  max-width: 30.1rem;
+  max-height: 6rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #FFFFFF;
 }
 
 .faq__CTA input:hover {

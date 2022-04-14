@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
+import illustration from "../../assets/images/image-cta-illustration.png";
 
 const { 
   faq, 
@@ -9,6 +10,7 @@ const {
   faq__selectTitle, 
   faq__contentCTA,
   faq__CTA,
+  faq__contentCTAImg
 } = styles;
 
 export function FAQ() {
@@ -40,7 +42,8 @@ export function FAQ() {
         <div className={faq__contentCTA}>
           <a href="/findMentor">
             <div className={faq__CTA}>
-              <input type="submit" value="Busque um mentor" />
+              <img src={illustration} alt="" className={faq__contentCTAImg}/>
+              <input type="submit" value="Busque um mentor!" />
            </div>
           </a>
         </div>
