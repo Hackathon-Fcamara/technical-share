@@ -15,18 +15,18 @@ import javax.validation.constraints.NotNull;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_skils")
-public class Skils {
+@Table(name = "tb_skills")
+public class Skills {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@NotNull
-	private String skil;
+	private String skill;
 
 	@ManyToMany
-	@JoinTable(name = "usuarios_skils", joinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"))
-	@JsonIgnoreProperties("skils")
+	@JoinTable(name = "usuarios_skills", joinColumns = @JoinColumn(name = "id_skill", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"))
+	@JsonIgnoreProperties("skills")
 	private List<Usuarios> usuarios;
 
 	public Long getId() {
@@ -37,12 +37,12 @@ public class Skils {
 		this.id = id;
 	}
 
-	public String getSkil() {
-		return skil;
+	public String getSkill() {
+		return skill;
 	}
 
-	public void setSkil(String skil) {
-		this.skil = skil;
+	public void setSkill(String skill) {
+		this.skill = skill;
 	}
 
 	public List<Usuarios> getUsuarios() {
@@ -52,5 +52,7 @@ public class Skils {
 	public void setUsuarios(List<Usuarios> usuarios) {
 		this.usuarios = usuarios;
 	}
+
+	
 
 }

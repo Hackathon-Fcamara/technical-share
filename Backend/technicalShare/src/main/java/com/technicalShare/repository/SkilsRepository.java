@@ -6,12 +6,12 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.technicalShare.model.Skils;
+import com.technicalShare.model.Skills;
 
 @Repository
-public interface SkilsRepository extends JpaRepository<Skils, Long> {
+public interface SkilsRepository extends JpaRepository<Skills, Long> {
 
-	public List<Skils> findAllBySkilContainingIgnoreCase(String skil);
-	public Optional<Skils> findAllBySkil(String skil);
+	public List<Skills> findAllBySkillContainingIgnoreCase(String skill);
+	public Optional<Skills> findAllBySkill(String skill);
 
 }

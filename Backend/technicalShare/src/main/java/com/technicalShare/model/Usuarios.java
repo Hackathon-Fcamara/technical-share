@@ -46,9 +46,9 @@ public class Usuarios {
 	private String senha;
 
 	@ManyToMany
-	@JoinTable(name = "usuarios_skils", joinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_skil", referencedColumnName = "id"))
+	@JoinTable(name = "usuarios_skills", joinColumns = @JoinColumn(name = "id_pessoa", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "id_skill", referencedColumnName = "id"))
 	@JsonIgnoreProperties("usuarios")
-	private List<Skils> skils;
+	private List<Skills> skills;
 
 	@OneToMany(mappedBy = "usuarios", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuarios")
@@ -56,7 +56,12 @@ public class Usuarios {
 
 	@OneToMany(mappedBy = "usuarios", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuarios")
-	private List<Agenda> agenda;
+	private List<Disponibilidade> disponibilidade;
+	
+	
+
+	public Usuarios() {
+	}
 
 	public Long getId() {
 		return id;
@@ -130,12 +135,12 @@ public class Usuarios {
 		this.senha = senha;
 	}
 
-	public List<Skils> getSkils() {
-		return skils;
+	public List<Skills> getSkills() {
+		return skills;
 	}
 
-	public void setSkils(List<Skils> skils) {
-		this.skils = skils;
+	public void setSkills(List<Skills> skills) {
+		this.skills = skills;
 	}
 
 	public List<Depoimentos> getDepoimentos() {
@@ -146,12 +151,14 @@ public class Usuarios {
 		this.depoimentos = depoimentos;
 	}
 
-	public List<Agenda> getAgenda() {
-		return agenda;
+	public List<Disponibilidade> getDisponibilidade() {
+		return disponibilidade;
 	}
 
-	public void setAgenda(List<Agenda> agenda) {
-		this.agenda = agenda;
+	public void setDisponibilidade(List<Disponibilidade> disponibilidade) {
+		this.disponibilidade = disponibilidade;
 	}
+	
+	
 
 }

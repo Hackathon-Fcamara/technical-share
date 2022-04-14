@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.technicalShare.model.Skils;
+import com.technicalShare.model.Skills;
 import com.technicalShare.repository.SkilsRepository;
 import com.technicalShare.service.SkilsService;
 
 @RestController
-@RequestMapping("/skils")
+@RequestMapping("/skills")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class SkilsController {
 
@@ -31,31 +31,31 @@ public class SkilsController {
 	private SkilsRepository repo;
 
 	@GetMapping("/all")
-	public ResponseEntity<List<Skils>> getAll() {
+	public ResponseEntity<List<Skills>> getAll() {
 		return ResponseEntity.ok(repo.findAll());
 	}
 
 	@GetMapping("/{id}")
-	public ResponseEntity<Skils> getById(@PathVariable Long id) {
+	public ResponseEntity<Skills> getById(@PathVariable Long id) {
 		return repo.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 
-	@GetMapping("/nome/{skil}")
-	public ResponseEntity<List<Skils>> getBySkil(@PathVariable String skil) {
-		return ResponseEntity.ok(repo.findAllBySkilContainingIgnoreCase(skil));
+	@GetMapping("/nome/{skill}")
+	public ResponseEntity<List<Skills>> getBySkil(@PathVariable String skill) {
+		return ResponseEntity.ok(repo.findAllBySkillContainingIgnoreCase(skill));
 	}
 
 	@PostMapping("/cadastrar")
-	public ResponseEntity<Skils> cadastrarSkil(@RequestBody Skils skil) {
-		return service.cadastrarSkil(skil).map(resp -> ResponseEntity.ok(resp))
+	public ResponseEntity<Skills> cadastrarSkil(@RequestBody Skills skill) {
+		return service.cadastrarSkill(skill).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.status(HttpStatus.BAD_REQUEST).build());
 
 	}
 
 	//Provavelmente não será implementado
 	@PostMapping("/atualizar")
-	public ResponseEntity<Skils> atualizarrSkils(@Valid @RequestBody Skils skils) {
-		return ResponseEntity.status(HttpStatus.OK).body(repo.save(skils));
+	public ResponseEntity<Skills> atualizarrSkils(@Valid @RequestBody Skills skills) {
+		return ResponseEntity.status(HttpStatus.OK).body(repo.save(skills));
 	}
 
 	@DeleteMapping("/{id}")

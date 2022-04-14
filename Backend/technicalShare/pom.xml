@@ -9,11 +9,11 @@
 		<version>2.6.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>org.generation</groupId>
-	<artifactId>blogpessoal</artifactId>
+	<groupId>com.technicalShare</groupId>
+	<artifactId>technicalShare</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>blogpessoal</name>
-	<description>Blog pessoal desenvolvido durante o blogo 2 da Generation Brasil</description>
+	<name>technicalShare</name>
+	<description>Projeto API technicalShare desenvolvido durante o hackathon da Fcamara</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
