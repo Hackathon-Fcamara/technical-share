@@ -3,7 +3,7 @@ import { Hero } from "../../components/Hero";
 import { BecomeMentor } from "../../components/BecomeMentor";
 import { Benefits } from "../../components/Benefits";
 import { Testimonial } from "../../components/Testimonial";
-import { FAQ } from "../../components/FAQ";
+import { Faq } from "../../components/Faq";
 import { Footer } from "../../components/Footer";
 
 export const PageHome = () => {
@@ -14,7 +14,7 @@ export const PageHome = () => {
       <BecomeMentor />
       <Benefits />
       <Testimonial />
-      <FAQ />
+      <Faq />
       <Footer />
     </>
   );
