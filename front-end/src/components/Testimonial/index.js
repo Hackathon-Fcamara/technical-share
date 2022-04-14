@@ -20,7 +20,9 @@ export const Testimonial = () => {
   return (
     <section>
       <div className={testimonial__container}>
-        <h2 className={testimonial__firstTitle}>Depoimentos</h2>
+        <h2 className={`globalTitle ${testimonial__firstTitle}`}>
+          Depoimentos
+        </h2>
         <ul className={testimonial__cardList}>
           <li className={testimonial__card}>
             <figure>
