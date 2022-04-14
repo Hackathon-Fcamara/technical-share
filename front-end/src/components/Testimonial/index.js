@@ -1,6 +1,8 @@
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
 import imageGuy from "../../assets/images/image-guy.jpg";
+import { api } from "../../services/api";
 
 const {
   testimonial__container,
@@ -17,9 +19,22 @@ const {
 } = styles;
 
 export const Testimonial = () => {
+
+  const [testimonial, setTestimonial ] = useState([]);
+
+  useEffect(() => {
+    api.get("depoimentos").then(({data}) => {
+      setTestimonial(data);
+    })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  console.log(testimonial);
+
   return (
     <section>
-      <div className={testimonial__container}>
+      {testimonial?.map((r) => (
+        <div key={r.id} className={testimonial__container}>
         <h2 className={testimonial__firstTitle}>Depoimentos</h2>
         <ul className={testimonial__cardList}>
           <li className={testimonial__card}>
@@ -31,19 +46,16 @@ export const Testimonial = () => {
               />
             </figure>
             <div className={testimonial__textWrapper}>
-              <h3 className={testimonial__secondTitle}>Luciano Tavares</h3>
-              <span className={testimonial__role}>Dev Front-End Sênior</span>
+              <h3 className={testimonial__secondTitle}>{r.nome}</h3>
+              <span className={testimonial__role}>{r.usuarios.cargo}</span>
               <p className={testimonial__aboutTitle}>O que falam sobre</p>
-              <p className={testimonial__aboutText}>
-                Com a plataforma Technical Share pude encontrar exatamente o que
-                eu precisava do meu mentor. E através de uma mentoria assertiva
-                consegui organizar melhor meus estudos.{" "}
-              </p>
-              <span className={testimonial__author}>Depoimento de Matheus</span>
+              <p className={testimonial__aboutText}>{r.depoimentos}</p>
+              <span className={testimonial__author}>{`Depoimento de ${r.usuarios.nome}`}</span>
             </div>
           </li>
         </ul>
       </div>
+      ))}
     </section>
   );
 };
