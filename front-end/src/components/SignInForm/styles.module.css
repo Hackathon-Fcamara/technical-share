@@ -3,7 +3,6 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  max-width: 60rem;
   max-height: 65rem;
 }
 
@@ -58,6 +57,10 @@
   padding: 0 1.2rem;
   background: var(--white);
   height: 4.4rem;
+}
+
+.signInForm__Checkbox {
+  margin-top: 1rem;
 }
 
 .signInForm__containerTitle {
