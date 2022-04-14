@@ -105,3 +105,14 @@
   line-height: 2.4rem;
   margin-bottom: 2.4rem;
 }
+
+.globalAbout__title {
+  font-size: var(--fs-title-5);
+  line-height: var(--lh-title-5);
+  margin-bottom: 1.6rem;
+}
+
+.globalAbout__text {
+  font-size: var(--fs-textLg);
+  line-height: var(--lh-textLg);
+}
