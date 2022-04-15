@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import illustration from "../../assets/images/image-foto-illustration.png";
 import { IoLogoLinkedin } from "react-icons/io";
 import { RiEarthLine } from "react-icons/ri";
+import { api } from "../../services/api";
 
 const { 
   mentorSpecs, 
@@ -17,9 +18,21 @@ const {
 } = styles;
 
 export function MentorSpecs() {
+
+  const [ mentorInfo, setMentorInfo ] = useState([]);
+
+  useEffect(() => {
+    api.get("usuarios/all").then(({data}) => {
+      setMentorInfo(data)
+    })
+  }, [])
+
+  console.log(mentorInfo)
+
   return(
     <div className={mentorSpecs}>
-      <div className={mentorSpecs__container}>
+      {mentorInfo?.map((r) => (
+        <div key={r.id} className={mentorSpecs__container}>
         <div className={mentorSpecs__content}>
             <figure className={mentorSpecs__contentPhoto}>
               <img 
@@ -29,15 +42,14 @@ export function MentorSpecs() {
               />
             </figure>
             <div className={mentorSpecs__contentId}>
-              <h1>Noberto Hashimoto</h1>
-              <h2>Dev Front-End Sênior</h2>
+              <h1>{r.nome}</h1>
+              <h2>{`${r.cargo} ${r.nivel}`}</h2>
             </div>
             <h1>Habilidades</h1>
             <div className={mentorSpecs__contentSkills}>
-              <h1>Tags</h1>
-              <h1>Tags</h1>
-              <h1>Tags</h1>
-              <h1>Tags</h1>
+              {r.skils.map((skils) => (
+                <h1 key={skils.id}>{skils.skil}</h1>
+              ))}
             </div>
             <h1>Redes Sociais</h1>
             <div className={mentorSpecs__contentSocial}>
@@ -46,6 +58,7 @@ export function MentorSpecs() {
             </div>
         </div>
       </div>
+      ))}
     </div>
   )
 }
