@@ -15,6 +15,7 @@ const {
   signUpForm__textDivider,
   signUpForm__textNote,
   signUpForm__btn,
+  signUp__message,
 } = styles;
 
 export const SignUp = ({ handleOpenNewTaskModal }) => {
@@ -71,7 +72,7 @@ export const SignUp = ({ handleOpenNewTaskModal }) => {
     <section className={signUp}>
       <div className={signUp__container}>
         <h2 className="globalRegister__title">Cadastre-se agora</h2>
-        <p className="globalRegister__message">
+        <p className={`${signUp__message} globalRegister__message`}>
           E conheça o melhor caminho para o seu desenvolvimento profissional
         </p>
         <form onSubmit={submit} className={signUpForm}>
