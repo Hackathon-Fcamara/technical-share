@@ -38,7 +38,7 @@ export const Footer = () => {
         ></img>
       </figure>
       <p className={footer__text}>
-        Esse design foi desenvolvido pelo Squad 31 - Hackathon S03
+        Projeto desenvolvido pelo Squad 31 - Hackathon S03 - FCamara 2022
       </p>
       <ul className={footer__iconList}>
         <li className={footer__icon}>
