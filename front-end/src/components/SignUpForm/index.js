@@ -17,7 +17,7 @@ const {
   signUpForm__btn,
 } = styles;
 
-export const SignUp = () => {
+export const SignUp = ({ handleOpenNewTaskModal }) => {
   const [nome, setNome] = useState("");
   const [sobrenome, setSobrenome] = useState("");
   const [usuario, setUsuario] = useState("");
@@ -64,7 +64,7 @@ export const SignUp = () => {
     const response = await api.post("usuarios/cadastrar", data);
 
     if (response.status === 200) {
-      console.log("Dados enviados");
+      handleOpenNewTaskModal();
     } else {
       console.log(response.error);
     }
