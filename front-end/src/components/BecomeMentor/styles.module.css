@@ -1,0 +1,91 @@
+.becomeMentor__container {
+  max-width: calc(1440px - 3.2rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "image"
+    "button";
+  padding: 3.2rem 2.4rem 2.4rem;
+  row-gap: 2rem;
+}
+
+.becomeMentor__imgWrapper {
+  grid-area: image;
+  justify-self: center;
+}
+
+.becomeMentor__textWrapper {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 620px;
+  align-items: left;
+  justify-self: center;
+}
+
+.becomeMentor__image {
+  width: 100%;
+  max-width: 24rem;
+}
+
+.becomeMentor__textWrapper .becomeMentor__title {
+  font-size: var(--fs-title-3);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 2.2rem;
+}
+
+.becomeMentor__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-textLg);
+  line-height: var(--lh-textLg);
+  max-width: 51.8rem;
+}
+
+.becomeMentor__ctaBtn {
+  grid-area: button;
+  justify-self: center;
+}
+
+.becomeMentor__ctaBtn:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .becomeMentor__textWrapper {
+    justify-content: end;
+    justify-self: start;
+    text-align: left;
+  }
+  .becomeMentor__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image text"
+      "image button";
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+    padding: 8rem 2.4rem;
+  }
+  .becomeMentor__imgWrapper {
+    justify-self: center;
+  }
+  .becomeMentor__image {
+    width: 100%;
+    max-width: 40rem;
+  }
+  .becomeMentor__textWrapper .becomeMentor__title {
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1.2rem;
+  }
+  .becomeMentor__container .becomeMentor__ctaBtn {
+    grid-area: button;
+    justify-self: start;
+    height: 6rem;
+    width: 30rem;
+  }
+}

@@ -1,0 +1,13 @@
+.findMentorMain__container {
+  padding: 3.2rem 2.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .findMentorMain__container {
+    display: flex;
+    gap: 2.4rem;
+    max-width: calc(1440px - 3.2rem);
+    margin: 0 auto;
+    padding: 8rem 2.4rem;
+  }
+}

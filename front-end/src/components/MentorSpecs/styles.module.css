@@ -1,0 +1,31 @@
+.mentorSpecs {
+  width: 100%;
+  padding: 2.4rem;
+}
+
+.mentorSpecs__container {
+  max-width: 21.5rem;
+  margin: 0 auto;
+}
+
+.mentorSpecs__contentImg {
+  width: 100%;
+}
+
+.mentorSpecs__name {
+}
+
+.mentorSpecs__role {
+}
+
+.mentorSpecs__skillTitle {
+}
+
+.mentorSpecs__skillList {
+}
+
+.mentorSpecs__contentSocial {
+}
+
+.mentorSpecs__socialLink {
+}

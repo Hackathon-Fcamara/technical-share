@@ -1,0 +1,119 @@
+.globalForm__label {
+  width: 100%;
+}
+
+.globalForm__input,
+.globalForm__select,
+.globalForm__message {
+  border: 1px solid var(--purple);
+  display: flex;
+  border-radius: 1.2rem;
+  padding: 0 1.2rem;
+  background: var(--white);
+}
+
+.globalForm__input,
+.globalForm__select {
+  height: 4.4rem;
+}
+
+.globalForm__labelText {
+  display: block;
+  font-size: var(--fs-subLg);
+  margin-bottom: 0.8rem;
+  line-height: var(--lh-label);
+  font-weight: 500;
+}
+
+.globalForm__selectWrapper {
+  position: relative;
+}
+
+.globalForm__select {
+  appearance: none;
+  position: relative;
+}
+
+.globalForm__selectArrow {
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  top: 0;
+  right: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.globalForm__select::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0.8rem;
+  background: red;
+}
+
+.globalBtn {
+  height: 4rem;
+  padding: 1.2rem 3rem;
+  font-size: var(--fs-btnSm);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 25rem;
+  border-radius: 0.6rem;
+  line-height: var(--lh-btn);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.globalBtn--primary {
+  color: var(--white);
+  background: var(--orange);
+}
+
+.globalBtn--secondary {
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+}
+
+.globalTitle {
+  font-size: var(--fs-title-3);
+  text-align: center;
+  font-weight: 600;
+  color: var(--purple-darker);
+  margin-bottom: 3.2rem;
+}
+
+.globalRegister__title,
+.globalRegister__message {
+  text-align: center;
+}
+
+.globalRegister__title {
+  font-size: var(--fs-title-3);
+  line-height: var(--lh-textLg);
+  margin-bottom: 0.8rem;
+}
+
+.globalRegister__message {
+  font-size: var(--fs-title-7);
+  font-weight: 400;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.globalAbout__title {
+  font-size: var(--fs-title-5);
+  line-height: var(--lh-title-5);
+  margin-bottom: 1.6rem;
+}
+
+.globalAbout__text {
+  font-size: var(--fs-textLg);
+  line-height: var(--lh-textLg);
+}

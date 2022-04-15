@@ -1,0 +1,133 @@
+.header {
+  background: #09003e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  display: flex;
+  max-width: calc(1440px - 3.2rem);
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 8.2rem;
+  align-items: center;
+  padding: 0 2.4rem;
+}
+
+.header__logoSm {
+  width: 3.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.header__logoLg {
+  display: none;
+}
+
+.header__logo svg {
+  width: 100%;
+  height: auto;
+}
+
+.header__container .header__ctaBtn {
+  height: 4rem;
+  font-size: var(--fs-text);
+  padding: 0 1rem;
+}
+
+.hamburguer__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.hamburguer {
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: none;
+  gap: 0.6rem;
+}
+
+.hamburguer__pipe {
+  display: block;
+  background: #ffffff;
+  border-radius: 200px;
+  height: 0.2rem;
+  width: 100%;
+}
+
+.hamburguer__menu {
+  padding: 2rem;
+  border-top: 1px solid var(--purple);
+}
+
+.hamburguer__opt {
+  padding: 2rem;
+}
+
+.hamburguer__opt:not(:last-child) {
+  border-bottom: 1px solid var(--purple);
+}
+
+.hamburguer__optLink,
+.hamburguer__optBtn {
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.hamburguer__optBtn {
+  background: transparent;
+}
+
+.header__menuWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__container {
+    justify-content: initial;
+  }
+
+  .header__logoSm {
+    display: none;
+  }
+
+  .header__logoLg {
+    display: block;
+    width: 24rem;
+  }
+
+  .header__menuWrapper {
+    margin-left: auto;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__menuList {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  .header__menuLink {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: var(--white);
+  }
+
+  .hamburguer,
+  .hamburguer__menu {
+    display: none;
+  }
+}

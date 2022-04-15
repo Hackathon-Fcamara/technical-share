@@ -1,0 +1,65 @@
+.signUp {
+  padding: 0 2.4rem;
+}
+
+.signUp__container {
+  padding: 2.4rem 0;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.signUpForm__label {
+  display: block;
+}
+
+.signUpForm__labelText {
+  display: block;
+}
+
+.signUpForm__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.signUpForm__input {
+  width: 100%;
+}
+
+.signUpForm__select {
+  width: 100%;
+  background: red;
+}
+
+.signUpForm__textDivider {
+  font-size: var(--fs-title-6);
+}
+
+.signUpForm__textNote {
+  font-size: 1rem;
+}
+
+.signUp__container .signUpForm__btn {
+  width: 100%;
+  max-width: initial;
+  margin-top: 1.6rem;
+  height: 4.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .signUp__container {
+    padding: 0;
+  }
+
+  .signUp__message {
+    margin-top: 2.4rem;
+  }
+
+  .signUp__container .signUpForm__btn {
+    height: 4.8rem;
+  }
+}

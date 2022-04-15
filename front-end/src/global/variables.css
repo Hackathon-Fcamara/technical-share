@@ -1,0 +1,179 @@
+:root {
+  /* COLORS */
+  --purple: #402776;
+  --purple-dark: #25145a;
+  --purple-darker: #09003e;
+  --purple-light: #7b5cb2;
+  --purple-lighter: #b591ed;
+  --orange: #e9542e;
+  --orange-dark: #a10600;
+  --orange-darker: #490000;
+  --orange-light: #ff7248;
+  --orange-lighter: #ffd09e;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #7f7f7f;
+  --gray-light: #dcdcdc;
+  --gray-lighter: #e6e6e6;
+
+  /* FONTS */
+
+  /* 20px @360px to 56px @1440px */
+  --fs-title-1: clamp(
+    1.25rem * 1.6,
+    0.5rem * 1.6 + 3.3333333333333335vw,
+    3.5rem * 1.6
+  );
+  /* 16px @360px to 48px @1440px */
+  --fs-title-2: clamp(
+    1rem * 1.6,
+    0.33333333333333326rem * 1.6 + 2.9629629629629632vw,
+    3rem * 1.6
+  );
+  /* 18px @360px to 40px @1440px */
+  --fs-title-3: clamp(
+    1.125rem * 1.6,
+    0.6666666666666666rem * 1.6 + 2.037037037037037vw,
+    2.5rem * 1.6
+  );
+  /* 16px @360px to 32px @1440px */
+  --fs-title-4: clamp(
+    1rem * 1.6,
+    0.6666666666666666rem * 1.6 + 1.4814814814814816vw,
+    2rem * 1.6
+  );
+  /* 14px @360px to 24px @1440px*/
+  --fs-title-5: clamp(
+    0.875rem * 1.6,
+    0.6666666666666667rem * 1.6 + 0.9259259259259258vw,
+    1.5rem * 1.6
+  );
+  /* 14px @360px to 20px @1440px */
+  --fs-title-6: clamp(
+    0.875rem * 1.6,
+    0.75rem * 1.6 + 0.5555555555555556vw,
+    1.25rem * 1.6
+  );
+  /* 16px @360px to 20px @1440px */
+  --fs-title-7: clamp(
+    1rem * 1.6,
+    0.9166666666666666rem * 1.6 + 0.3703703703703704vw,
+    1.25rem * 1.6
+  );
+  /* 12px@360px to 16px @1440px */
+  --fs-sub: clamp(
+    0.75rem * 1.6,
+    0.6666666666666666rem * 1.6 + 0.3703703703703704vw,
+    1rem * 1.6
+  );
+  /* 12px @360px to 18px @1440px */
+  --fs-subLg: clamp(
+    0.75rem * 1.6,
+    0.625rem * 1.6 + 0.5555555555555556vw,
+    1.125rem * 1.6
+  );
+  /* 14px @360px to 16px @1440px */
+  --fs-text: clamp(
+    0.875rem * 1.6,
+    0.8333333333333334rem * 1.6 + 0.1851851851851852vw,
+    1rem * 1.6
+  );
+  /* 14px @360px to 18px @1440px */
+  --fs-textLg: clamp(
+    0.875rem * 1.6,
+    0.7916666666666666rem * 1.6 + 0.3703703703703704vw,
+    1.125rem * 1.6
+  );
+  /* 12px @360px to 14px @1440px */
+  --fs-textSm: clamp(
+    0.75rem * 1.6,
+    0.7083333333333334rem * 1.6 + 0.1851851851851852vw,
+    0.875rem * 1.6
+  );
+  /* 16px @1440px */
+  --fs-btnLg: 1.6rem;
+  /* 20px @360px */
+  --fs-btnSm: 2rem;
+  /* 12px @360px to 20px @1440px */
+  --fs-btnFluidSm: clamp(
+    0.75rem * 1.6,
+    0.5833333333333333rem * 1.6 + 0.7407407407407408vw,
+    1.25rem * 1.6
+  );
+  /* 14px @360px to 20px @1440px*/
+  --fs-btnFluidLg: clamp(
+    0.875rem * 1.6,
+    0.75rem * 1.6 + 0.5555555555555556vw,
+    1.25rem * 1.6
+  );
+  /* 12px @360px to 20px @1440px */
+  --fs-tagFluid: clamp(
+    0.75rem * 1.6,
+    0.5833333333333333rem * 1.6 + 0.7407407407407408vw,
+    1.25rem * 1.6
+  );
+
+  /* LINE HEIGHT */
+
+  /* 20px @360px to 68px @1440px */
+  --lh-title-1: clamp(
+    1.25rem * 1.6,
+    0.25rem * 1.6 + 4.444444444444445vw,
+    4.25rem * 1.6
+  );
+  --lh-title-2: clamp(
+    1rem * 1.6,
+    0.16666666666666674rem * 1.6 + 3.7037037037037033vw,
+    3.5rem * 1.6
+  );
+  /* 22px @360px to 52px @1440px */
+  --lh-title-3: clamp(
+    1.375rem * 1.6,
+    0.75rem * 1.6 + 2.777777777777778vw,
+    3.25rem * 1.6
+  );
+  /* 20px @ 360px to 44px @1440px*/
+  --lh-title-4: clamp(
+    1.25rem * 1.6,
+    0.75rem * 1.6 + 2.2222222222222223vw,
+    2.75rem * 1.6
+  );
+  /* 14px @360px to 28px @1440px*/
+  --lh-title-5: clamp(
+    0.875rem * 1.6,
+    0.5833333333333333rem * 1.6 + 1.2962962962962965vw,
+    1.75rem * 1.6
+  );
+  /* 18px @360px to 24px @1440px*/
+  --lh-title-6: clamp(
+    1.125rem * 1.6,
+    1rem * 1.6 + 0.5555555555555556vw,
+    1.5rem * 1.6
+  );
+  /*  18px @360px to 24px @1440px*/
+  --lh-sub: clamp(1.125rem * 1.6, 1.05rem * 1.6 + 0.375vw, 1.5rem * 1.6);
+  /* 16px @360px to 20px @1440px*/
+  --lh-subLg: clamp(
+    1rem * 1.6,
+    0.9166666666666666rem * 1.6 + 0.3703703703703704vw,
+    1.25rem * 1.6
+  );
+  /* 18px @360px to 20px @1440px*/
+  --lh-subSm: clamp(
+    1.125rem * 1.6,
+    1.0833333333333333rem * 1.6 + 0.1851851851851852vw,
+    1.25rem * 1.6
+  );
+  /* 12px @360px to 20px @1440px*/
+  --lh-label: clamp(
+    0.75rem * 1.6,
+    0.5833333333333333rem * 1.6 + 0.7407407407407408vw,
+    1.25rem * 1.6
+  );
+  /* 16px @360px to 20px @1440px */
+  --lh-text: clamp(1rem * 1.6, 0.95rem * 1.6 + 0.25vw, 1.25rem * 1.6);
+  /* 18px @360px to 24px @1440px*/
+  --lh-textLg: clamp(1.125rem * 1.6, 1.05rem * 1.6 + 0.375vw, 1.5rem * 1.6);
+  /* 16px */
+  --lh-btn: 1.6rem;
+}

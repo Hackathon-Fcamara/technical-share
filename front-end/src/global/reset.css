@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  /* Chromium */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Metropolis";
+  outline: transparent;
+  font-weight: 400;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

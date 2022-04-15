@@ -1,0 +1,89 @@
+.mentorBanner {
+  display: flex;
+  gap: 1.6rem;
+  background: var(--white);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.mentorBanner:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.mentorBanner__tag {
+  padding: 0 0.8rem;
+  height: 2.6rem;
+  background: var(--purple);
+  color: var(--white);
+  font-size: var(--fs-sub);
+  line-height: var(--lh-label);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+
+.mentorBanner__tag:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.mentorBanner__textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentorBanner__img {
+  width: 100%;
+  height: 100%;
+  max-width: 13rem;
+  object-fit: cover;
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+
+.mentorBanner__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.mentorBanner__content .mentorBanner__ctaBtn {
+  font-weight: 400;
+  font-size: var(--fs-btnFluidSm);
+  /* height: 2.6rem; */
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.mentorBanner__name {
+  font-size: var(--fs-title-6);
+}
+
+.mentorBanner__bio {
+  display: none;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.mentorBanner__role {
+  font-size: var(--fs-subLg);
+}
+
+@media screen and (min-width: 1024px) {
+  .mentorBanner__img {
+    width: 20.5rem;
+    max-width: initial;
+  }
+  .mentorBanner__bio {
+    display: block;
+    margin-top: 1rem;
+  }
+  .mentorBanner__content .mentorBanner__ctaBtn {
+    font-weight: 700;
+    height: 3.6rem;
+  }
+
+  .mentorBanner:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+}
