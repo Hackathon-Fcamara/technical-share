@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
+// STYLES
 import styles from "./styles.module.css";
 
+// IMAGES
 import imageGuy from "../../assets/images/image-guy.jpg";
+
+// AXIOS
 import { api } from "../../services/api";
 
 const {
@@ -19,17 +24,13 @@ const {
 } = styles;
 
 export const Testimonial = () => {
-
-  const [testimonial, setTestimonial ] = useState([]);
+  const [testimonial, setTestimonial] = useState([]);
 
   useEffect(() => {
-    api.get("depoimentos").then(({data}) => {
+    api.get("depoimentos").then(({ data }) => {
       setTestimonial(data);
-    })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  console.log(testimonial);
+    });
+  }, []);
 
   return (
     <section>
@@ -38,7 +39,7 @@ export const Testimonial = () => {
           Depoimentos
         </h2>
         <ul className={testimonial__cardList}>
-          {testimonial?.map((r) => (
+          {testimonial?.map((r) => {
             return (
               <li className={testimonial__card}>
                 <figure>
@@ -53,12 +54,14 @@ export const Testimonial = () => {
                   <span className={testimonial__role}>{r.usuarios.cargo}</span>
                   <p className={testimonial__aboutTitle}>O que falam sobre</p>
                   <p className={testimonial__aboutText}>{r.depoimentos}</p>
-                  <span className={testimonial__author}>{`Depoimento de ${r.usuarios.nome}`}</span>
+                  <span
+                    className={testimonial__author}
+                  >{`Depoimento de ${r.usuarios.nome}`}</span>
                 </div>
               </li>
-            )
-          ))}
-          </ul>
+            );
+          })}
+        </ul>
       </div>
     </section>
   );
