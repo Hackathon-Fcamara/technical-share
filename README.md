@@ -57,11 +57,11 @@ npm start
 
 - :paintbrush: Link do nosso <a href="https://www.figma.com/file/cm19a1XPH4gpuMTbM1nFoN/Technical-Share---UI?node-id=10%3A2">figma</a>;
 - :clipboard: Nossa tabela
-- :video_camera: E o
+
 
 <h2 id="squad"> :sparkles: Squad 31 </h2>
 
-| :camera_flash:                                              | Nome              |  ?         | Contatos                                                                                                                            |
+| :camera_flash:                                              | Nome              |           | Contatos                                                                                                                            |
 | ----------------------------------------------------------- | ----------------- | ---        | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="images/Brian.jpg" width="200"><br>_Dev_           | Brian Rocha       |            | <a href="https://www.linkedin.com/in/brian-rocha-897220237">Linkedin</a><br><a href="https://github.com/BobtheCoder-jpg">Github</a>|
 | <img src="images/Leonardo.jpg" width="200"><br>_Dev_        | Leonardo Teixeira |            |                                                                                         <a href="https://www.linkedin.com/in/leotx/ ">Linkedin</a>                                              |
