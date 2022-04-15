@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import { FormInput } from "../FormInput";
 import { FormSelect } from "../FormSelect";
+import { FormSkillSelect } from "../FormSkillSelect";
 import { FormTextarea } from "../FormTextarea";
 import { api } from "../../services/api";
 import { TagList } from "../TagList";
@@ -60,13 +61,13 @@ export const SignUp = () => {
 
     console.log(data);
 
-    // const response = await api.post("usuarios/cadastrar", data);
+    const response = await api.post("usuarios/cadastrar", data);
 
-    // if (response.status === 200) {
-    //   console.log("Dados enviados");
-    // } else {
-    //   console.log("erro");
-    // }
+    if (response.status === 200) {
+      console.log("Dados enviados");
+    } else {
+      console.log(response.error);
+    }
   }
 
   return (
@@ -129,18 +130,19 @@ export const SignUp = () => {
               onChange={(e) => setNivel(e.target.value)}
             />
           </div>
-          <FormSelect
+          <FormSkillSelect
             labelText="Habilidade"
             idVal="skill"
-            optList={ability.map((r) => r.skill)}
-            // onChange={(e) => {
-            //   if (skills.includes(e.target.value)) {
-            //     return;
-            //   }
-            //   const newSkill = [...(ability.skill === e.target.value)];
-            //   console.log(ability.skill);
-            //   setSkills(newSkill.id);
-            // }}
+            optList={ability}
+            onChange={(newSkill) => {
+              const existeSkill = skills.some(
+                (skill) => skill.skill === newSkill.skill
+              );
+
+              if (!existeSkill) {
+                setSkills([...skills, newSkill]);
+              }
+            }}
           />
           <TagList tags={skills} removeSkill={removeSkill} />
           <p className={signUpForm__textNote}>
@@ -178,7 +180,6 @@ export const SignUp = () => {
           <button
             type="submit"
             className={`${signUpForm__btn} globalBtn globalBtn--primary`}
-            onClick={console.log(ability[0].id)}
           >
             Cadastrar
           </button>
