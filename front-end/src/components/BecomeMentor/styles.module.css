@@ -1,73 +1,92 @@
-.mentor__container {
+.becomeMentor__container {
   max-width: calc(1440px - 3.2rem);
   margin: 0 auto;
   display: grid;
-  justify-items: center;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "title"
     "text"
     "image"
     "button";
-  padding: 2rem;
+  padding: 3.2rem 2.4rem 2.4rem;
   row-gap: 2rem;
 }
 
-.mentor__container a {
-  width: 19.5rem;
-}
-
-.mentor__wrapperFirst {
+.becomeMentor__imgWrapper {
   grid-area: image;
-}
-
-.mentor__container a {
   justify-self: center;
-  width: 100vw;
-  height: 100vh;
-  max-width: 24.6rem;
-  max-height: 4rem;
 }
 
-.mentor__pic {
+.becomeMentor__textWrapper {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 620px;
+  align-items: left;
+  justify-self: center;
+}
+
+.becomeMentor__image {
   width: 100%;
+  max-width: 24rem;
 }
 
-.mentor__title {
+.becomeMentor__textWrapper .becomeMentor__title {
   color: var(--black);
-  grid-area: title;
-  text-align: center;
-  font-size: 1.8rem;
+  font-size: var(--fs-title-3);
   font-weight: 600;
   font-style: normal;
   line-height: 2.2rem;
 }
 
-.mentor__text {
-  grid-area: text;
+.becomeMentor__text {
   font-style: normal;
   font-weight: 400;
   font-size: var(--fs-textLg);
-  line-height: 1.8rem;
-  text-align: center;
+  line-height: var(--lh-textLg);
+  max-width: 51.8rem;
 }
 
-.mentor__ctaBtn {
+.becomeMentor__ctaBtn {
   grid-area: button;
-  width: 100%;
-  height: 100%;
-  max-height: 4rem;
-  max-width: 24.6rem;
-  background: var(--orange);
-  border: none;
-  border-radius: 0.6rem;
-  color: var(--white);
-  font-style: normal;
-  font-weight: 700;
-  font-size: var(--fs-btnSm);
-  line-height: 16px;
+  justify-self: center;
 }
 
-.mentor__ctaBtn:hover {
+.becomeMentor__ctaBtn:hover {
   cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .becomeMentor__textWrapper {
+    justify-content: end;
+    justify-self: start;
+    text-align: left;
+  }
+  .becomeMentor__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image text"
+      "image button";
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+    padding: 8rem 2.4rem;
+  }
+  .becomeMentor__imgWrapper {
+    justify-self: center;
+  }
+  .becomeMentor__image {
+    width: 100%;
+    max-width: 40rem;
+  }
+  .becomeMentor__textWrapper .becomeMentor__title {
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 1.2rem;
+  }
+  .becomeMentor__container .becomeMentor__ctaBtn {
+    grid-area: button;
+    justify-self: start;
+    height: 6rem;
+    width: 30rem;
+  }
 }
