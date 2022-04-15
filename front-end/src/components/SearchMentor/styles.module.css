@@ -1,10 +1,6 @@
 .search {
-  padding: 0 2.4rem;
   color: var(--black);
-}
-
-.search__container {
-  padding: 3.2rem 0 2.4rem;
+  flex-grow: 1;
 }
 
 .search__title {
@@ -42,4 +38,18 @@
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+}
+
+.search__mentorBannerWrapper {
+  margin-top: 2.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .search__optWrapper {
+    display: none;
+  }
+
+  .search__mentorBannerWrapper {
+    margin-top: 4rem;
+  }
 }

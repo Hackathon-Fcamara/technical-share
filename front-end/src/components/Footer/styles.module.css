@@ -5,6 +5,7 @@
   background-color: var(--purple);
   padding: 5.6rem 2.4rem 3.2rem;
   gap: 1.6rem;
+  margin-top: auto;
 }
 
 .footer__logoWrapper {
