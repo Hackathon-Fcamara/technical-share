@@ -24,11 +24,11 @@ export function Faq() {
       <div className={faq__container}>
         <div className={faq__selectWrapper}>
           <h2 className={`globalTitle ${faq__title}`}>FAQ</h2>
-          <FormSelect optList={[]} />
-          <FormSelect optList={[]} />
-          <FormSelect optList={[]} />
-          <FormSelect optList={[]} />
-          <FormSelect optList={[]} />
+          <FormSelect optList={["O que é uma mentoria?"]} />
+          <FormSelect optList={["Como acontecerá cada mentoria?"]} />
+          <FormSelect optList={["Quem pode se tornar mentor?"]} />
+          <FormSelect optList={["Quem pode ser mentorado?"]} />
+          <FormSelect optList={["Achei o mentor, e agora?"]} />
         </div>
         <div className={faq__contentCta}>
           <figure className="faq__imgWrapper">
