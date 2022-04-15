@@ -20,7 +20,7 @@ const {
 
 export function Faq() {
   return (
-    <section className={faq}>
+    <section className={faq} id="faq">
       <div className={faq__container}>
         <div className={faq__selectWrapper}>
           <h2 className={`globalTitle ${faq__title}`}>FAQ</h2>

@@ -34,7 +34,6 @@ export const SignUp = ({ handleOpenNewTaskModal }) => {
   function removeSkill(index) {
     const newSkills = skills.filter((data, idx) => idx !== index);
 
-    console.log(newSkills);
     setSkills(newSkills);
   }
 
@@ -58,8 +57,6 @@ export const SignUp = ({ handleOpenNewTaskModal }) => {
       senha: senha,
       skills: skills,
     };
-
-    console.log(data);
 
     const response = await api.post("usuarios/cadastrar", data);
 
@@ -170,13 +167,7 @@ export const SignUp = ({ handleOpenNewTaskModal }) => {
             value={portifolio}
             onChange={(e) => setPortifolio(e.target.value)}
           />
-          <FormInput
-            labelText="Rede Social"
-            inputType="text"
-            idVal="social"
-            // value={}
-            // onChange={}
-          />
+          <FormInput labelText="Rede Social" inputType="text" idVal="social" />
           <button
             type="submit"
             className={`${signUpForm__btn} globalBtn globalBtn--primary`}

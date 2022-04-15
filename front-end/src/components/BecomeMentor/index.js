@@ -33,7 +33,7 @@ export const BecomeMentor = () => {
           </p>
         </div>
         <a
-          href="/mentorPage"
+          href="/register"
           className={`globalBtn globalBtn--primary ${becomeMentor__ctaBtn}`}
         >
           Seja um mentor

@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.mentorBanner:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
 .mentorBanner__tag {
   padding: 0 0.8rem;
   height: 2.6rem;
@@ -17,6 +21,10 @@
   display: inline-flex;
   align-items: center;
   border-radius: 0.4rem;
+}
+
+.mentorBanner__tag:not(:last-child) {
+  margin-right: 0.8rem;
 }
 
 .mentorBanner__textWrapper {
@@ -73,5 +81,9 @@
   .mentorBanner__content .mentorBanner__ctaBtn {
     font-weight: 700;
     height: 3.6rem;
+  }
+
+  .mentorBanner:not(:last-child) {
+    margin-bottom: 3.2rem;
   }
 }

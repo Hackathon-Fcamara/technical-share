@@ -13,35 +13,41 @@ const {
   mentorBanner__bio,
 } = styles;
 
-export const MentorBanner = () => {
-  return (
-    <article className={mentorBanner}>
-      <figure className="mentorBanner__imgWrapper">
-        <img
-          src="http://via.placeholder.com/640x360"
-          alt="Foto do mentor"
-          className={mentorBanner__img}
-        />
-      </figure>
-      <div className={mentorBanner__content}>
-        <div className={mentorBanner__textWrapper}>
-          <h3 className={mentorBanner__name}>Luciano Tavares</h3>
-          <span className={mentorBanner__role}>Dev Front-End Senior</span>
-          <p className={mentorBanner__bio}>
-            Imperdiet in risus, ultricies sed quis amet, sagittis. Pretium
-            senectus ullamcorper tempus sed ut tincidunt libero, nulla in.
-            Venenatis pellentesque faucibus nibh pellentesque dignissim...
-          </p>
+export const MentorBanner = ({ userList }) => {
+  return userList.map((user, index) => {
+    const { id, nome, cargo, descricao, skills } = user;
+    return (
+      <article key={id} className={mentorBanner}>
+        <figure className="mentorBanner__imgWrapper">
+          <img
+            src="http://via.placeholder.com/640x360"
+            alt="Foto do mentor"
+            className={mentorBanner__img}
+          />
+        </figure>
+        <div className={mentorBanner__content}>
+          <div className={mentorBanner__textWrapper}>
+            <h3 className={mentorBanner__name}>{nome}</h3>
+            <span className={mentorBanner__role}>{cargo}</span>
+            <p className={mentorBanner__bio}>{descricao}</p>
+          </div>
+          <ul>
+            {skills.map((skill) => {
+              return (
+                <li key={skill.id} className={mentorBanner__tag}>
+                  {skill.skill}
+                </li>
+              );
+            })}
+          </ul>
+          <a
+            href="/schedule"
+            className={`${mentorBanner__ctaBtn} globalBtn globalBtn--primary`}
+          >
+            Visitar perfil
+          </a>
         </div>
-        <ul className="mentorBanner__tagList">
-          <li className={mentorBanner__tag}>CSS</li>
-        </ul>
-        <button
-          className={`${mentorBanner__ctaBtn} globalBtn globalBtn--primary`}
-        >
-          Visitar perfil
-        </button>
-      </div>
-    </article>
-  );
+      </article>
+    );
+  });
 };

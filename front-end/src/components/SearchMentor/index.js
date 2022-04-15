@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { MentorBanner } from "../MentorBanner";
+import { api } from "../../services/api";
 
 // STYLES
 import styles from "./styles.module.css";
@@ -6,16 +8,26 @@ import styles from "./styles.module.css";
 const {
   search,
   search__container,
-  search__optWrapper,
   search__title,
   search__fieldWrapper,
   search__field,
-  search__optButton,
   search__mentorBannerWrapper,
   search__btn,
 } = styles;
 
 export const SearchMentor = () => {
+  const [searchValue, setSearchValue] = useState("");
+  const [userList, setUserList] = useState([]);
+
+  const fetchUser = (value) => {
+    api.get(`usuarios/nome/${value}`).then(({ data }) => {
+      if (data.length === 0) {
+        return;
+      }
+      setUserList(data);
+    });
+  };
+
   return (
     <section className={search}>
       <div className={search__container}>
@@ -26,8 +38,12 @@ export const SearchMentor = () => {
               className={search__field}
               type="text"
               placeholder="Procure pelo nome do mentor ou habilidade"
+              onChange={(e) => setSearchValue(e.target.value)}
             />
-            <button className={search__btn}>
+            <button
+              className={search__btn}
+              onClick={() => fetchUser(searchValue)}
+            >
               <svg
                 width="28"
                 height="28"
@@ -42,7 +58,7 @@ export const SearchMentor = () => {
               </svg>
             </button>
           </div>
-          <div className={search__optWrapper}>
+          {/* <div className={search__optWrapper}>
             <button className={search__optButton}>
               <span className="search__btnText">Organizar</span>
               <svg
@@ -120,11 +136,13 @@ export const SearchMentor = () => {
                 />
               </svg>
             </button>
+          </div> */}
+        </div>
+        {userList.length !== 0 && (
+          <div className={search__mentorBannerWrapper}>
+            <MentorBanner userList={userList} />
           </div>
-        </div>
-        <div className={search__mentorBannerWrapper}>
-          <MentorBanner />
-        </div>
+        )}
       </div>
     </section>
   );

@@ -1,14 +1,13 @@
 import React from "react";
 
 export const FormSelect = ({ labelText, idVal, optList, value, onChange }) => {
-  
   return (
     <label htmlFor={idVal} className="globalForm__label">
       <span className="globalForm__labelText">{labelText}</span>
       <div className="globalForm__selectWrapper">
-        <select 
-          name={idVal} 
-          id={idVal} 
+        <select
+          name={idVal}
+          id={idVal}
           className="globalForm__select"
           value={value}
           onChange={onChange}
@@ -18,11 +17,7 @@ export const FormSelect = ({ labelText, idVal, optList, value, onChange }) => {
           </option>
           {optList.map((opt) => {
             return (
-              <option
-                key={`${index}-${opt}`}
-                value={opt}
-                className="contactForm__option"
-              >
+              <option value={opt} className="contactForm__option">
                 {opt}
               </option>
             );
