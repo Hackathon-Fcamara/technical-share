@@ -32,7 +32,6 @@
 }
 
 .becomeMentor__textWrapper .becomeMentor__title {
-  color: var(--black);
   font-size: var(--fs-title-3);
   font-weight: 600;
   font-style: normal;
