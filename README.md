@@ -33,6 +33,7 @@ Será possível realizar um agendamento pela parte do mentorado, o mentor recebe
 
 <h2 id="tecnologias"> :robot: Tecnologias </h2>
 
+
 <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"><img src="https://img.shields.io/badge/-HTML-0d1017"/></a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-0d1017"/></a> </a> <a href="https://www.javascript.com/"><img  src="https://img.shields.io/badge/-JavaScript-0d1017"/></a> <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/-ReactJS-0d1017"/></a>
 
 <h2 id="obter"> :card_file_box: Como Obter o Projeto</h2>
@@ -57,17 +58,18 @@ npm start
 - :paintbrush: Link do nosso <a href="https://www.figma.com/file/cm19a1XPH4gpuMTbM1nFoN/Technical-Share---UI?node-id=10%3A2">figma</a>;
 - :clipboard: Nossa tabela
 
+
 <h2 id="squad"> :sparkles: Squad 31 </h2>
 
-| :camera_flash:                                              | Nome              |     | Contatos                                                                                                                                     |
-| ----------------------------------------------------------- | ----------------- | --- | -------------------------------------------------------------------------------------------------------------------------------------------- | --- |
-| <img src="images/Brian.jpg" width="200"><br>_Dev_           | Brian Rocha       |     | <a href="https://www.linkedin.com/in/brian-rocha-897220237">Linkedin</a><br><a href="https://github.com/BobtheCoder-jpg">Github</a>          |
-| <img src="images/Leonardo.jpg" width="200"><br>_Dev_        | Leonardo Teixeira |     | <a href="https://www.linkedin.com/in/leotx/ ">Linkedin</a><br><a href="https://github.com/leottx">Github</a>                                 |
-| <img src="images/Matheus.png" width="200"><br>_UX Designer_ | Matheus Santos    |     | <a href="https://www.linkedin.com/in/matheussantos081194/">Linkedin</a><br><a href="https://www.behance.net/mathsnts">Behance</a>            |     |
-| <img src="images/Monique.jpg" width="200"><br>_UX Designer_ | Monique Vaz       |     | <a href="https://www.linkedin.com/in/monique-vaz-081b8016a">Linkedin</a><br><a href="https://www.behance.net/moniquecardoso1">Behance</a>    |
-| <img src="images/rafa.jpg" width="200"><br>_Dev_            | Rafael Sampaio    |     | <a href="https://www.linkedin.com/in/rafael-sampaio-de-oliveira-49b317210/">Linkedin</a><br><a href="https://github.com/Samppaio">Github</a> |
-| <img src="images/vanessa.jpg" width="200"><br>_UX Designer_ | Vanessa Almeida   |     | <a href="https://www.linkedin.com/in/vanessaalmartins/">Linkedin</a>                                                                         |
-| <img src="images/Victor.jpg" width="200"><br>_Dev_          | Victor Martins    |     | <a href="https://www.linkedin.com/in/victorm-reis/">Linkedin</a><br><a href="https://github.com/victormreis">Github</a>                      |
+| :camera_flash:                                              | Nome              |           | Contatos                                                                                                                            |
+| ----------------------------------------------------------- | ----------------- | ---        | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="images/Brian.jpg" width="200"><br>_Dev_           | Brian Rocha       |            | <a href="https://www.linkedin.com/in/brian-rocha-897220237">Linkedin</a><br><a href="https://github.com/BobtheCoder-jpg">Github</a>|
+| <img src="images/Leonardo.jpg" width="200"><br>_Dev_        | Leonardo Teixeira |            |                                                                                         <a href="https://www.linkedin.com/in/leotx/ ">Linkedin</a><br><a href="https://github.com/leottx">Github</a>                                               |
+| <img src="images/Matheus.png" width="200"><br>_UX Designer_ | Matheus Santos    |     | <a href="https://www.linkedin.com/in/matheussantos081194/">Linkedin</a><br><a href="https://www.behance.net/mathsnts">Behance</a>    |                                                                                                                                     |
+| <img src="images/Monique.jpg" width="200"><br>_UX Designer_ | Monique Vaz       |     | <a href="https://www.linkedin.com/in/monique-vaz-081b8016a">Linkedin</a><br><a href="https://www.behance.net/moniquecardoso1">Behance</a>                                                            |
+| <img src="images/rafa.jpg" width="200"><br>_Dev_        | Rafael Sampaio        |     | <a href="https://www.linkedin.com/in/rafael-sampaio-de-oliveira-49b317210/">Linkedin</a><br><a href="https://github.com/Samppaio">Github</a>                                                                                                                                    |
+| <img src="images/vanessa.jpg" width="200"><br>_UX Designer_ | Vanessa Almeida   |     | <a href="https://www.linkedin.com/in/vanessaalmartins/">Linkedin</a>                                                                                                                                    |
+| <img src="images/Victor.jpg" width="200"><br>_Dev_          | Victor Martins    |     | <a href="https://www.linkedin.com/in/victorm-reis/">Linkedin</a><br><a href="https://github.com/victormreis">Github</a>              |
 
 <hr>
 
