@@ -4,12 +4,13 @@ export const FormSelect = ({ labelText, idVal, optList }) => {
       <span className="globalForm__labelText">{labelText}</span>
       <div className="globalForm__selectWrapper">
         <select name={idVal} id={idVal} className="globalForm__select">
-          <option value="default" className="contactForm__option">
-            Default
-          </option>
-          {optList.map((opt) => {
+          {optList.map((opt, index) => {
             return (
-              <option value={opt} className="contactForm__option">
+              <option
+                key={`${index}-${opt}`}
+                value={opt}
+                className="contactForm__option"
+              >
                 {opt}
               </option>
             );
