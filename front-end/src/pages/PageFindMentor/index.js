@@ -1,6 +1,5 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
-import { AsideFilter } from "../../components/AsideFilter";
 import { SearchMentor } from "../../components/SearchMentor";
 
 // STYLES
@@ -14,7 +13,6 @@ export const PageFindMentor = () => {
       <Header />
       <main className={findMentorMain}>
         <div className={findMentorMain__container}>
-          <AsideFilter />
           <SearchMentor />
         </div>
       </main>
