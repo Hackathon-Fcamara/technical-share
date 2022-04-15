@@ -44,6 +44,10 @@
   margin-top: 2.4rem;
 }
 
+.search__btn {
+  background: transparent;
+}
+
 @media screen and (min-width: 1024px) {
   .search__optWrapper {
     display: none;
