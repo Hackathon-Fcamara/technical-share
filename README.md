@@ -61,15 +61,15 @@ npm start
 
 <h2 id="squad"> :sparkles: Squad 31 </h2>
 
-| :camera_flash:                                              | Nome              |    | Contatos                                                                                                                            |
-| ----------------------------------------------------------- | ----------------- | --- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="images/Brian.jpg" width="200"><br>_Dev_           | Brian Rocha       |     | <a href="https://www.linkedin.com/in/brian-rocha-897220237">Linkedin</a><br><a href="https://github.com/BobtheCoder-jpg">Github</a> |
-| <img src="images/Leonardo.jpg" width="200"><br>_Dev_        | Leonardo Teixeira |     |                                                                                         <a href="https://www.linkedin.com/in/leotx/ ">Linkedin</a>                                              |
+| :camera_flash:                                              | Nome              |  ?         | Contatos                                                                                                                            |
+| ----------------------------------------------------------- | ----------------- | ---        | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="images/Brian.jpg" width="200"><br>_Dev_           | Brian Rocha       |            | <a href="https://www.linkedin.com/in/brian-rocha-897220237">Linkedin</a><br><a href="https://github.com/BobtheCoder-jpg">Github</a>|
+| <img src="images/Leonardo.jpg" width="200"><br>_Dev_        | Leonardo Teixeira |            |                                                                                         <a href="https://www.linkedin.com/in/leotx/ ">Linkedin</a>                                              |
 | <img src="images/Matheus.png" width="200"><br>_UX Designer_ | Matheus Santos    |     | <a href="https://www.linkedin.com/in/matheussantos081194/">Linkedin</a><br><a href="https://www.behance.net/mathsnts">Behance</a>    |                                                                                                                                     |
-| <img src="images/Monique.jpg" width="200"><br>_UX Designer_ | Monique Vaz       |     | <a href="https://www.linkedin.com/in/monique-vaz-081b8016a">Linkedin</a>                                                            |
-| <img src="images/rafa.jpg" width="200"><br>_Dev_        | Rafael Sampaio    |     |                                                                                                                                     |
-| <img src="images/vanessa.jpg" width="200"><br>_UX Designer_ | Vanessa Almeida   |     |                                                                                                                                     |
-| <img src="images/Victor.jpg" width="200"><br>_Dev_          | Victor Martins    |     | <a href="https://www.linkedin.com/in/victorm-reis/">Linkedin</a><br><a href="https://github.com/victormreis">Github</a>             |
+| <img src="images/Monique.jpg" width="200"><br>_UX Designer_ | Monique Vaz       |     | <a href="https://www.linkedin.com/in/monique-vaz-081b8016a">Linkedin</a><br><a href="https://www.behance.net/moniquecardoso1">Behance</a>                                                            |
+| <img src="images/rafa.jpg" width="200"><br>_Dev_        | Rafael Sampaio        |     | <a href="https://www.linkedin.com/in/rafael-sampaio-de-oliveira-49b317210/">Linkedin</a><br><a href="https://github.com/Samppaio">Github</a>                                                                                                                                    |
+| <img src="images/vanessa.jpg" width="200"><br>_UX Designer_ | Vanessa Almeida   |     | <a href="https://www.linkedin.com/in/vanessaalmartins/">Linkedin</a>                                                                                                                                    |
+| <img src="images/Victor.jpg" width="200"><br>_Dev_          | Victor Martins    |     | <a href="https://www.linkedin.com/in/victorm-reis/">Linkedin</a><br><a href="https://github.com/victormreis">Github</a>              |
 
 <hr>
 
