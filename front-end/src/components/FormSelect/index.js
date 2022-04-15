@@ -18,7 +18,11 @@ export const FormSelect = ({ labelText, idVal, optList, value, onChange }) => {
           </option>
           {optList.map((opt) => {
             return (
-              <option value={opt} className="contactForm__option">
+              <option
+                key={`${index}-${opt}`}
+                value={opt}
+                className="contactForm__option"
+              >
                 {opt}
               </option>
             );
