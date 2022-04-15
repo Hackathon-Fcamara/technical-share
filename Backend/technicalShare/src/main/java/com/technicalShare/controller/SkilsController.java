@@ -52,7 +52,7 @@ public class SkilsController {
 
 	}
 
-	//Provavelmente não será implementado
+	//não será implementado
 	@PostMapping("/atualizar")
 	public ResponseEntity<Skills> atualizarrSkils(@Valid @RequestBody Skills skills) {
 		return ResponseEntity.status(HttpStatus.OK).body(repo.save(skills));
