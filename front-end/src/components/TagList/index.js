@@ -6,8 +6,8 @@ export const TagList = ({ tags, removeSkill }) => {
   return (
     <ul className={tagList}>
       {tags.map((tag, index) => (
-        <li key={`${tag}-${index}`} className={tagList__item}>
-          <span className={tagList__tagText}>{tag}</span>
+        <li key={`${tag.skill}-${index}`} className={tagList__item}>
+          <span className={tagList__tagText}>{tag.skill}</span>
           <button
             onClick={() => removeSkill(index)}
             className={tagList__tagBtn}
