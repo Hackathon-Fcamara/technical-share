@@ -20,7 +20,7 @@ const {
 
 export const Benefits = () => {
   return (
-    <section className={benefits}>
+    <section className={benefits} id="benefits">
       <div className={benefits__container}>
         <h2 className={`${benefits__title} globalTitle`}>Vantagens</h2>
         <ul className={`${benefits__cardList}`}>

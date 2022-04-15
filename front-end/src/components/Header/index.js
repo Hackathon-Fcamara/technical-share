@@ -30,7 +30,7 @@ export const Header = () => {
   return (
     <header className={header}>
       <div className={header__container}>
-        <a href="/home" className={header__logoSm}>
+        <a href="/" className={header__logoSm}>
           <svg
             viewBox="0 0 30 26"
             fill="none"
@@ -74,14 +74,14 @@ export const Header = () => {
             </defs>
           </svg>
         </a>
-        <a href="/home" className={header__logoLg}>
+        <a href="/" className={header__logoLg}>
           <img src={logoLg} alt="Logo da Technical Share" />
         </a>
         <div className={header__menuWrapper}>
           <nav className={header__menu}>
             <ul className={header__menuList}>
               <li className="header__menuOpt">
-                <a href="/home" className={header__menuLink}>
+                <a href="/" className={header__menuLink}>
                   Home
                 </a>
               </li>
@@ -91,17 +91,17 @@ export const Header = () => {
                 </a>
               </li>
               <li className="header__menuOpt">
-                <a href="/home" className={header__menuLink}>
+                <a href="#benefits" className={header__menuLink}>
                   Vantagens
                 </a>
               </li>
               <li className="header__menuOpt">
-                <a href="/home" className={header__menuLink}>
+                <a href="#faq" className={header__menuLink}>
                   FAQ
                 </a>
               </li>
               <li className="header__menuOpt">
-                <a href="" className={header__menuLink}>
+                <a href="/register" className={header__menuLink}>
                   Login do mentor
                 </a>
               </li>
