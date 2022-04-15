@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import { FormInput } from "../FormInput";
 import { api } from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 const {
   signInForm,
@@ -16,6 +17,8 @@ export function SignInForm() {
   const [login, setLogin] = useState();
   const [senha, setSenha] = useState();
 
+  const navigate = useNavigate();
+
   async function submit(e) {
     e.preventDefault();
 
@@ -24,17 +27,18 @@ export function SignInForm() {
       senha: senha,
     };
 
-    console.log(data);
+    // console.log(data);
 
     const response = await api.post("usuarios/logar", data);
 
+    localStorage.setItem(
+      "tokens",
+      JSON.stringify(`Basic ${response.data.token}`)
+    );
+
     if (response.status === 200) {
-      console.log("Dados enviados");
-      if (response.data.status === 1) {
-        //... localstorage
-      }
-    } else {
-      console.log("erro");
+      console.log(response.data);
+      navigate("/mentorPage");
     }
   }
 
