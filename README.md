@@ -73,6 +73,6 @@ npm start
 
 <hr>
 
-<h3>Feito com açúcar, tempero e tudo que há de bom pelo Squad 31!!! :orange_heart:</h3>
+<h4>Feito com açúcar, tempero e tudo que há de bom pelo Squad 31!!! :orange_heart:</h4>
 <p>ᴱ ᵘᵐ ᵖᵒᵘᶜᵒ ᵈᵉ ᵉˡᵉᵐᵉⁿᵗᵒ ˣ</p>
 
