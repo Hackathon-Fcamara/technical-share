@@ -7,10 +7,11 @@ import { useNavigate } from "react-router-dom";
 const {
   signInForm,
   signInForm__container,
-  signInForm__containerTitle,
-  signInForm__containerInput,
+  signInForm__form,
   signInForm__containerButton,
-  signInForm__Checkbox,
+  signInForm__checkLabel,
+  signInForm__checkbox,
+  signInForm__labelText,
 } = styles;
 
 export function SignInForm() {
@@ -26,8 +27,6 @@ export function SignInForm() {
       usuario: login,
       senha: senha,
     };
-
-    // console.log(data);
 
     const response = await api.post("usuarios/logar", data);
 
@@ -45,32 +44,38 @@ export function SignInForm() {
   return (
     <div className={signInForm}>
       <div className={signInForm__container}>
-        <p>Já tem cadastro em nossa plataforma?</p>
-        <h1 className={signInForm__containerTitle}>Faça seu login!</h1>
-        <form onSubmit={submit}>
-          <div className={signInForm__containerInput}>
-            <FormInput
-              labelText="E-mail*"
-              inputType="email"
-              idVal="email"
-              value={login}
-              onChange={(e) => setLogin(e.target.value)}
+        <p className={"globalRegister__message"}>
+          Já tem cadastro em nossa plataforma?
+        </p>
+        <h2 className={"globalRegister__title"}>Faça seu login!</h2>
+        <form onSubmit={submit} className={signInForm__form}>
+          <FormInput
+            labelText="E-mail*"
+            inputType="email"
+            idVal="email"
+            value={login}
+            onChange={(e) => setLogin(e.target.value)}
+          />
+          <FormInput
+            labelText="Senha*"
+            inputType="password"
+            idVal="password"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+          />
+          <label className={signInForm__checkLabel} htmlFor="signInCheckbox">
+            <input
+              className={signInForm__checkbox}
+              type="checkbox"
+              name="checkbox"
+              id="signInCheckbox"
             />
-            <FormInput
-              labelText="Senha*"
-              inputType="password"
-              idVal="password"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-            />
-          </div>
-          <div className={signInForm__Checkbox}>
-            <label htmlFor="checkbox">
-              <span>Lembrar minha senha</span>
-              <input type="checkbox" name="checkbox" id="signInCheckbox" />
-            </label>
-          </div>
-          <button type="submit" className={signInForm__containerButton}>
+            <span className={signInForm__labelText}>Lembrar minha senha</span>
+          </label>
+          <button
+            type="submit"
+            className={`${signInForm__containerButton} globalBtn globalBtn--primary`}
+          >
             Entrar
           </button>
         </form>

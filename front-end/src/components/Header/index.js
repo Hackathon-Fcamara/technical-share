@@ -22,7 +22,6 @@ const {
   hamburguer__menu,
   hamburguer__opt,
   hamburguer__optLink,
-  hamburguer__optBtn,
 } = styles;
 
 export const Header = () => {
@@ -130,7 +129,7 @@ export const Header = () => {
         <nav className={hamburguer__menu}>
           <ul className="hamburguer__optList">
             <li className={hamburguer__opt}>
-              <a href="#findMentor" className={hamburguer__optLink}>
+              <a href="/findMentor" className={hamburguer__optLink}>
                 Busque um mentor
               </a>
             </li>
@@ -145,7 +144,9 @@ export const Header = () => {
               </a>
             </li>
             <li className={hamburguer__opt}>
-              <button className={hamburguer__optBtn}>Login do mentor</button>
+              <a href="register" className={hamburguer__optLink}>
+                Login do mentor
+              </a>
             </li>
           </ul>
         </nav>
