@@ -7,7 +7,7 @@
 
 .header__container {
   display: flex;
-  max-width: 1440px;
+  max-width: calc(1440px - 3.2rem);
   margin: 0 auto;
   justify-content: space-between;
   width: 100%;
@@ -16,10 +16,14 @@
   padding: 0 2.4rem;
 }
 
-.header__logo {
+.header__logoSm {
   width: 3.8rem;
   display: flex;
   align-items: center;
+}
+
+.header__logoLg {
+  display: none;
 }
 
 .header__logo svg {
@@ -92,6 +96,15 @@
 @media screen and (min-width: 1024px) {
   .header__container {
     justify-content: initial;
+  }
+
+  .header__logoSm {
+    display: none;
+  }
+
+  .header__logoLg {
+    display: block;
+    width: 24rem;
   }
 
   .header__menuWrapper {

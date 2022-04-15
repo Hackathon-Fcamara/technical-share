@@ -3,10 +3,14 @@ import { useState } from "react";
 // STYLES
 import styles from "./styles.module.css";
 
+// IMAGES
+import logoLg from "../../assets/images/image-logo-horizontal.svg";
+
 const {
   header,
   header__container,
-  header__logo,
+  header__logoSm,
+  header__logoLg,
   header__ctaBtn,
   header__menuWrapper,
   header__menu,
@@ -26,7 +30,7 @@ export const Header = () => {
   return (
     <header className={header}>
       <div className={header__container}>
-        <a href="/home" className={header__logo}>
+        <a href="/home" className={header__logoSm}>
           <svg
             viewBox="0 0 30 26"
             fill="none"
@@ -69,6 +73,9 @@ export const Header = () => {
               </linearGradient>
             </defs>
           </svg>
+        </a>
+        <a href="/home" className={header__logoLg}>
+          <img src={logoLg} alt="Logo da Technical Share" />
         </a>
         <div className={header__menuWrapper}>
           <nav className={header__menu}>
