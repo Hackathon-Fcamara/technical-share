@@ -1,0 +1,63 @@
+.login {
+  max-width: 336px;
+  max-height: 326px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.login__title {
+  color: black;
+}
+
+.login__form {
+  max-width: 288px;
+  max-height: 286px;
+}
+
+.login__email {
+  color: black;
+  size: 30px;
+  text-align: left;
+}
+
+.login__emailWrapper {
+  max-width: 288px;
+  max-height: 60px;
+  align-items: left;
+}
+
+.login__emailInput {
+  max-width: 288px;
+  max-height: 40px;
+  cursor: cell;
+}
+
+.login__password {
+  color: black;
+  size: 30px;
+  text-align: left;
+}
+
+.login__passwordWrapper {
+  max-width: 288px;
+  max-height: 60px;
+  align-items: left;
+}
+
+.login__passwordInput {
+  max-width: 288px;
+  max-height: 40px;
+  cursor: cell;
+}
+
+.login__forgot {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.login__enter {
+  max-width: 172px;
+  max-height: 40px;
+}
