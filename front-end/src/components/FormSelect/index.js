@@ -1,10 +1,22 @@
-export const FormSelect = ({ labelText, idVal, optList }) => {
+import React from "react";
+
+export const FormSelect = ({ labelText, idVal, optList, value, onChange }) => {
+  
   return (
     <label htmlFor={idVal} className="globalForm__label">
       <span className="globalForm__labelText">{labelText}</span>
       <div className="globalForm__selectWrapper">
-        <select name={idVal} id={idVal} className="globalForm__select">
-          {optList.map((opt, index) => {
+        <select 
+          name={idVal} 
+          id={idVal} 
+          className="globalForm__select"
+          value={value}
+          onChange={onChange}
+        >
+          <option value="default" className="contactForm__option">
+            Selecione
+          </option>
+          {optList.map((opt) => {
             return (
               <option
                 key={`${index}-${opt}`}

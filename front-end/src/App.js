@@ -20,7 +20,7 @@ function App() {
       <Link to="/schedule" aria-label="Cronagrama" />
       <Link to="/mentorPage" aria-label="Página do mentor" />
       <Routes>
-        <Route path="home" element={<PageHome />} />
+        <Route path="/" element={<PageHome />} />
         <Route path="register" element={<PageRegister />} />
         <Route path="findMentor" element={<PageFindMentor />} />
         <Route path="schedule" element={<PageSchedule />} />
