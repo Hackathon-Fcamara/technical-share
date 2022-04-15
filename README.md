@@ -1,27 +1,74 @@
-# Technical Share - Squad 31
+<h1 align="center"> :stars: Technical Share - Squad 31 :stars: </h1>
 
-## :dart:  API de back-end do Projeto Technical Share do Squad 31!
+<p align="center">
+	<a href="#sobre">Sobre</a> • 
+	<a href="#avaliação">Avaliação</a> • 
+	<a href="#funcionalidade">Funcionalidade</a> • 
+	<a href="#tecnologias">Tecnologias</a> • 
+	<a href="#obter">Obter</a> • 
+	<a href="#extra">Extras</a> • 
+	<a href="#squad">Participantes</a>
+</p>
 
-## ⚠️ Aviso importante
+<h2 id="sobre"> :memo: Sobre</h2>
 
- Esta api se encontra hospedada no heroku e sua documentação pode ser acessada [Clicando aqui - API](https://ts31.herokuapp.com/) <br>
- Foi incluído um usuário em memória para realização de testes para acessar utilize:
-* Usuário: root 
-* Password: root
+- Projeto criado pelo Squad 31 durante o Hackathon do programa de formação do Grupo FCamara (S03 2022)
+- Este projeto teve o propósito de criar uma ferramenta capaz de conectar mentorados com seus respectivos mentores.
+<h3>Como:</h3>
+<p>Na página principal, o usuário é fornecido com todas as informações e ferramentas necessárias para a busca, ou o cadastro, de um mentor. O usuário é capaz de buscar por um mentor de seu assunto escolhido que condiza com seus horários disponíveis. Alternativamente, o usuário poderá se cadastrar como um mentor, disponibilizando suas habilidades e horários. Após a finalização do agendamento pela parte do mentorado, o mentor receberá um Email confirmando o processo de agendamento, a partir daí ambos os usuários poderão se conectar para o processo da mentoria.</p>
 
-## 💡 Nossa proposta
+<h2 id="avaliação"> :heavy_check_mark: Avaliação</h2>
 
-A proposta desta API é fornecer serviços como cadastro de usuários, cadastro de depoimentos, cadastro de skills e habilidades de cada usuário, além de algumas regras de negócio facilitando o trabalho da equipe de Front-end.
+- Deverá ser uma aplicação web responsiva;
+- Deverá ser entregue no mínimo 3 telas do projeto, sendo protótipo e desenvolvimento;
+- Vocês são livres para utilizar qualquer tecnologia que tenham mais afinidade;
+- Sejam criativos! Pensem fora da caixinha, inovem! Nós demos o problema, e vocês, como consultores, deverão trazer a melhor solução ;)
+- A entrega é um MVP, um mínimo produto viável, ou seja, faça aquilo que entregará valor ao cliente e usuário final!
 
-## 👨🏽‍💻 Tecnologias utilizadas
+<h2 id="funcionalidade"> :gear: Funcionalidade </h2>
 
-- ☕ Java
-- 🐘 MySQL e Postgre
-- 🍃 Spring Boot
+<p>Na estilização do front end divimos partes do arquivo html em componentes para o React, aplicando CSS puro para cada respectivo componente, criando assim um layout mais acessível.</p>
 
-## 💻 Forma como foi construido
+<h2 id="tecnologias"> :robot: Tecnologias </h2>
 
-- Utilização do spring boot para criação do projeto base
-- Utilização de algumas bibliotecas e dependências como JpaRepository, Devtools, SpringDocs, BasicSecurity, apache / commons-codec.
-- Criação de camadas para determinadas funções como Model, Repository, Controller, service e Security
-- Configuração do arquivo Applicantion.Properties para alternar entre desenvolvimento local e desenvolvimento em produção (Heroku)
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML" target="_blank"><img src="https://img.shields.io/badge/-HTML-0d1017"/></a> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-0d1017"/></a> </a> <a href="https://www.javascript.com/"><img  src="https://img.shields.io/badge/-JavaScript-0d1017"/></a> <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/-ReactJS-0d1017"/></a>
+
+<h2 id="obter"> :card_file_box: Como Obter o Projeto</h2>
+
+```bash
+# Clone o repositório
+git clone https://github.com/Hackathon-Fcamara/technical-share.git
+
+# Na pasta front-end execute o comando:
+yarn install
+ou
+npm install
+
+# E rode a aplicação através do seguinte comando:
+yarn start
+ou
+npm start
+```
+
+<h2 id="extra"> :paperclip: Extras </h2>
+
+- :paintbrush: Link do nosso <a href="https://www.figma.com/file/cm19a1XPH4gpuMTbM1nFoN/Technical-Share---UI?node-id=10%3A2">figma</a>;
+- :clipboard: Nossa tabela
+- :video_camera: E o
+
+<h2 id="squad"> :sparkles: Squad 31 </h2>
+
+| :camera_flash:                                              | Nome              | ?   | Contatos                                                                                                                            |
+| ----------------------------------------------------------- | ----------------- | --- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="images/Brian.jpg" width="200"><br>_Dev_           | Brian Rocha       |     | <a href="https://www.linkedin.com/in/brian-rocha-897220237">Linkedin</a><br><a href="https://github.com/BobtheCoder-jpg">Github</a> |
+| <img src="images/Leonardo.jpg" width="200"><br>_Dev_        | Leonardo Teixeira |     |                                                                                                                                     |
+| <img src="images/Matheus.png" width="200"><br>_UX Designer_ | Matheus Santos    |     |                                                                                                                                     |
+| <img src="images/Monique.jpg" width="200"><br>_UX Designer_ | Monique Vaz       |     | <a href="https://www.linkedin.com/in/monique-vaz-081b8016a">Linkedin</a>                                                            |
+|                                                             | Rafael Sampaio    |     |                                                                                                                                     |
+|                                                             | Vanessa Almeida   |     |                                                                                                                                     |
+| <img src="images/Victor.jpg" width="200"><br>_Dev_          | Victor Martins    |     | <a href="https://www.linkedin.com/in/victorm-reis/">Linkedin</a><br><a href="https://github.com/victormreis">Github</a>             |
+
+<hr>
+
+<h3>Feito com açúcar, tempero e tudo que há de bom pelo Squad 31!!! :orange_heart:</h3>
+<p>ᴱ ᵘᵐ ᵖᵒᵘᶜᵒ ᵈᵉ ᵉˡᵉᵐᵉⁿᵗᵒ ˣ</p>
